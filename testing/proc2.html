@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en"> 
+<head>
+
+   <meta charset="utf-8">
+	<title>Тестирование программного обеспечения</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+	<script src="js/modernizr.js"></script>
+	<link rel="shortcut icon" href="favicon.ico" >
+
+</head>
+
+<body>
+   <header>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+
+            <nav id="nav-wrap">
+               <a class="mobile-btn" href="#nav-wrap" title="Показать разделы">Показать разделы</a>
+	            <a class="mobile-btn" href="#" title="Скрыть разделы">Скрыть разделы</a>
+               <ul id="nav" class="nav">
+
+
+	               <li><a href="index.html">Главная</a></li>
+	               <li><a href="osnovnoe.html">Основные понятия</a></li>
+                   <li><span><a>Типы ошибок и методы отладки</a></span>
+						<ul>
+							<li><a href="type_metods.html">Типы ошибок</a></li>
+							<li><a href="type_metods2.html">Отладка и тестирование программ</a></li>
+						</ul>
+                   </li>
+	               <li class="current"><span><a>Процессы тестирования и разработки ПО</a></span>
+						<ul>
+							<li><a href="proc.html">Модели разработки ПО</a></li>
+							<li><a href="proc2.html">Жизненный цикл тестирования</a></li>
+						</ul>
+	               </li>
+	               <li><span><a>Классификация тестирования</a></span>
+						<ul>
+							<li><a href="upr.html">Метод белого ящика</a></li>
+							<li><a href="upr2.html">Метод чёрного ящика</a></li>
+							<li><a href="upr3.html">Ручное тестирование</a></li>
+							<li><a href="upr4.html">Автоматизированное тестирование</a></li>
+							<li><a href="upr5.html">Модульное (компонентное) тестирование</a></li>
+							<li><a href="upr6.html">Интеграционное тестирование</a></li>
+						</ul>
+	               </li>
+                   <li><span><a>Тест-кейс</a></span>
+						<ul>
+							<li><a href="test.html">Описание</a></li>
+							<li><a href="test2.html">Практическая работа № 1</a></li>
+							<li><a href="test3.html">Практическая работа № 2</a></li>
+						</ul>
+                   </li>
+               </ul> <!-- end #nav -->
+
+            </nav> <!-- end #nav-wrap -->
+
+         </div>
+
+      </div>
+
+   </header> <!-- Header End -->
+
+   <!-- Page Title
+   ================================================== -->
+   <div id="page-title">
+
+      <div class="row">
+
+         <div class="ten columns centered text-center">
+            <h1>Тестирование программного обеспечения</h1>
+         </div>
+
+      </div>
+
+   </div> <!-- Page Title End-->
+
+   <!-- Content
+   ================================================== -->
+   <div class="content-outer">
+
+      <div id="page-content">
+
+         <div class="row add-bottom">
+
+            <div class="twelve columns" style="padding-top: 24px;">
+
+               <h1 class="title-heading">Жизненный цикл тестирования</h1><br/>
+
+               <p class="lead add-bottom">Жизненный цикл тестирования также выражается замкнутой последовательностью действий.</p>
+               <center><img src="images/7.png"></center>
+               <p class="lead add-bottom"><b>Стадия 1</b> (общее планирование и анализ требований) объективно необходима как минимум для того, чтобы иметь ответ на такие вопросы, как: что предстоит тестировать; как много будет работы; какие есть сложности; всё ли необходимое у есть и т.п. Как правило, получить ответы на эти вопросы невозможно без анализа требований, т.к. именно требования являются первичным источником ответов.</p>
+               <p class="lead add-bottom"><b>Стадия 2</b> (уточнение критериев приёмки) позволяет сформулировать или уточнить метрики и признаки возможности или необходимости начала тестирования, приостановки и возобновления тестирования, завершения или прекращения тестирования.</p>
+               <p class="lead add-bottom"><b>Стадия 3</b> (уточнение стратегии тестирования) представляет собой ещё одно обращение к планированию, но уже на локальном уровне: рассматриваются и уточняются те части стратегии тестирования, которые актуальны для текущей итерации.</p>
+               <p class="lead add-bottom"><b>Стадия 4</b> (разработка тест-кейсов) посвящена разработке, пересмотру, уточнению, доработке, переработке и прочим действиям с тест-кейсами, наборами тест-кейсов, тестовыми сценариями и иными артефактами, которые будут использоваться при непосредственном выполнении тестирования.</p>
+               <p class="lead add-bottom"><b>Стадия 5</b> (выполнение тест-кейсов) и <b>стадия 6</b> (фиксация найденных дефектов) тесно связаны между собой и фактически выполняются параллельно: дефекты фиксируются сразу по факту их обнаружения в процессе выполнения тест-кейсов. Однако зачастую после выполнения всех тест-кейсов и написания всех отчётов о найденных дефектах проводится явно выделенная стадия уточнения, на которой все отчёты о дефектах рассматриваются повторно с целью формирования единого понимания проблемы и уточнения таких характеристик дефекта, как важность и срочность.</p>
+               <p class="lead add-bottom"><b>Стадия 7</b> (анализ результатов тестирования) и <b>стадия 8</b> (отчётность) также тесно связаны между собой и выполняются практически параллельно. Формулируемые на стадии анализа результатов выводы напрямую зависят от плана тестирования, критериев приёмки и уточнённой стратегии, полученных на стадиях 1, 2 и 3. Полученные выводы оформляются на стадии 8 и служат основой для стадий 1, 2 и 3 следующей итерации тестирования. Таким образом, цикл замыкается.</p>
+            <hr>
+
+            </div>
+
+         </div> <!-- Row End-->
+
+
+      </div> <!-- page-content End-->
+
+   </div> <!-- Content End-->
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+            <ul class="copyright">
+               <li>Калужский техникум электронных приборов 2021</a></li>               
+            </ul>
+
+         </div>
+
+         <div id="go-top" style="display: block;"><a title="Back to Top" href="#">Go To Top</a></div>
+
+      </div>
+
+   </footer> 
+
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/doubletaptogo.js"></script>
+   <script src="js/init.js"></script>
+
+</body>
+
+</html>

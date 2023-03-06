@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en"> 
+<head>
+
+   <meta charset="utf-8">
+	<title>Тестирование программного обеспечения</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+	<script src="js/modernizr.js"></script>
+	<link rel="shortcut icon" href="favicon.ico" >
+
+</head>
+
+<body>
+   <header>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+
+            <nav id="nav-wrap">
+               <a class="mobile-btn" href="#nav-wrap" title="Показать разделы">Показать разделы</a>
+	            <a class="mobile-btn" href="#" title="Скрыть разделы">Скрыть разделы</a>
+               <ul id="nav" class="nav">
+
+	               <li><a href="index.html">Главная</a></li>
+	               <li><a href="osnovnoe.html">Основные понятия</a></li>
+                   <li><span><a>Типы ошибок и методы отладки</a></span>
+						<ul>
+							<li><a href="type_metods.html">Типы ошибок</a></li>
+							<li><a href="type_metods2.html">Отладка и тестирование программ</a></li>
+						</ul>
+                   </li>
+	               <li><span><a>Процессы тестирования и разработки ПО</a></span>
+						<ul>
+							<li><a href="proc.html">Модели разработки ПО</a></li>
+							<li><a href="proc2.html">Жизненный цикл тестирования</a></li>
+						</ul>
+	               </li>
+	               <li><span><a>Классификация тестирования</a></span>
+						<ul>
+							<li><a href="upr.html">Метод белого ящика</a></li>
+							<li><a href="upr2.html">Метод чёрного ящика</a></li>
+							<li><a href="upr3.html">Ручное тестирование</a></li>
+							<li><a href="upr4.html">Автоматизированное тестирование</a></li>
+							<li><a href="upr5.html">Модульное (компонентное) тестирование</a></li>
+							<li><a href="upr6.html">Интеграционное тестирование</a></li>
+						</ul>
+	               </li>
+                   <li class="current"><span><a>Тест-кейс</a></span>
+						<ul>
+							<li><a href="test.html">Описание</a></li>
+							<li><a href="test2.html">Практическая работа № 1</a></li>
+							<li><a href="test3.html">Практическая работа № 2</a></li>
+						</ul>
+                   </li>
+               </ul> <!-- end #nav -->
+
+            </nav> <!-- end #nav-wrap -->
+
+         </div>
+
+      </div>
+
+   </header> <!-- Header End -->
+
+   <!-- Page Title
+   ================================================== -->
+   <div id="page-title">
+
+      <div class="row">
+
+         <div class="ten columns centered text-center">
+            <h1>Тестирование программного обеспечения</h1>
+         </div>
+
+      </div>
+
+   </div> <!-- Page Title End-->
+
+   <!-- Content
+   ================================================== -->
+   <div class="content-outer">
+
+      <div id="page-content">
+
+         <div class="row add-bottom">
+
+            <div class="twelve columns" style="padding-top: 24px;">
+
+               <h1 class="title-heading">Тест-кейс. Атрибуты тест-кейса</h1>
+
+               <p class="lead add-bottom">Любой тест-кейс обязательно включает в себя:</p>
+               <ul>
+				<li>Уникальный идентификатор тест-кейса — необходим для удобной организации хранения и навигации по тест-наборам.</li>
+				<li>Название — основная тема, или идея тест-кейса. Кратное описание его сути.</li>
+				<li>Предусловия — описание условий, которые не имеют прямого отношения к проверяемому функционалу, но должны быть выполнены.
+				Например, оставить комментарий на портале может только зарегистрированный пользователь. Значит для тест-кейса «Создание комментария» будет необходимо выполнение предусловия «пользователь зарегистрирован», и «пользователь авторизован».</li>
+				<li>Шаги — описание последовательности действий, которая должна привести к ожидаемому результату</li>
+				<li>Ожидаемый результат — результат: что ожидаем увидеть после выполнения шагов.</li>
+               </ul>
+               <p class="lead add-bottom">Не обязательно, но желательно добавить в тест-кейс атрибут история редактирования — лаконичный журнал изменений, где отраженно: кем, как, и когда был изменен тест-кейс -  это сильно облегчит жизнь.</p>
+               <h1 class="title-heading">Что еще необходимо знать, перед созданием тест-кейса?</h1>
+               <p class="lead add-bottom">Во-первых, каждый выполненный тест-кейс, дает один из трех результатов:</p>
+               <ul>
+				<li>Положительный результат, если фактический результат равен ожидаемому результату.</li>
+				<li>Отрицательный результат, если фактический результат не равен ожидаемому результату. В этом случае, найдена ошибка.</li>
+				<li>Выполнение теста блокировано, если после одного из шагов продолжение теста невозможно. В этом случае также найдена ошибка.</li>
+               </ul>
+				<p class="lead add-bottom">Во-вторых, одним тест-кейсом проверяется одна конкретная вещь, и для этой вещи должен быть только один ожидаемый результат.</p>
+               <h1 class="title-heading">Чего не должно быть в тест-кейсе?</h1>
+               <ul>
+				<li>Зависимостей от других тест-кейсов.</li>
+				<li>Нечеткой формулировки шагов или ожидаемого результата.</li>
+				<li>Отсутствия необходимой для прохождения тест-кейса информации.</li>
+				<li>Излишней детализации.</li>
+               </ul>
+               <h1 class="title-heading">Содержание отчета</h1>
+               <p class="lead add-bottom">Отчет должен содержать следующее:</p>
+               <ul>
+				<li>Тест-план.</li>
+				<li>Тест-набор.</li>
+				<li>Баг-репорты (по итерациям).</li>
+               </ul>
+               <p class="lead add-bottom">Тест-набор должен содержать не менее 10 тест-кейсов. Итераций тестирования должно быть не менее трёх.</p>
+              
+            <hr>
+
+            </div>
+
+         </div> <!-- Row End-->
+
+
+      </div> <!-- page-content End-->
+
+   </div> <!-- Content End-->
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+            <ul class="copyright">
+               <li>Калужский техникум электронных приборов 2021</a></li>               
+            </ul>
+
+         </div>
+
+         <div id="go-top" style="display: block;"><a title="Back to Top" href="#">Go To Top</a></div>
+
+      </div>
+
+   </footer> 
+
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/doubletaptogo.js"></script>
+   <script src="js/init.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en"> 
+<head>
+
+   <meta charset="utf-8">
+	<title>Тестирование программного обеспечения</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+	<script src="js/modernizr.js"></script>
+	<link rel="shortcut icon" href="favicon.ico" >
+
+</head>
+
+<body>
+   <header>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+
+            <nav id="nav-wrap">
+               <a class="mobile-btn" href="#nav-wrap" title="Показать разделы">Показать разделы</a>
+	            <a class="mobile-btn" href="#" title="Скрыть разделы">Скрыть разделы</a>
+               <ul id="nav" class="nav">
+
+
+	               <li><a href="index.html">Главная</a></li>
+	               <li><a href="osnovnoe.html">Основные понятия</a></li>
+                   <li><span><a>Типы ошибок и методы отладки</a></span>
+						<ul>
+							<li><a href="type_metods.html">Типы ошибок</a></li>
+							<li><a href="type_metods2.html">Отладка и тестирование программ</a></li>
+						</ul>
+                   </li>
+	               <li><span><a>Процессы тестирования и разработки ПО</a></span>
+						<ul>
+							<li><a href="proc.html">Модели разработки ПО</a></li>
+							<li><a href="proc2.html">Жизненный цикл тестирования</a></li>
+						</ul>
+	               </li>
+	               <li class="current"><span><a>Классификация тестирования</a></span>
+						<ul>
+							<li><a href="upr.html">Метод белого ящика</a></li>
+							<li><a href="upr2.html">Метод чёрного ящика</a></li>
+							<li><a href="upr3.html">Ручное тестирование</a></li>
+							<li><a href="upr4.html">Автоматизированное тестирование</a></li>
+							<li><a href="upr5.html">Модульное (компонентное) тестирование</a></li>
+							<li><a href="upr6.html">Интеграционное тестирование</a></li>
+						</ul>
+	               </li>
+                   <li><span><a>Тест-кейс</a></span>
+						<ul>
+							<li><a href="test.html">Описание</a></li>
+							<li><a href="test2.html">Практическая работа № 1</a></li>
+							<li><a href="test3.html">Практическая работа № 2</a></li>
+						</ul>
+                   </li>
+               </ul> <!-- end #nav -->
+
+            </nav> <!-- end #nav-wrap -->
+
+         </div>
+
+      </div>
+
+   </header> <!-- Header End -->
+
+   <!-- Page Title
+   ================================================== -->
+   <div id="page-title">
+
+      <div class="row">
+
+         <div class="ten columns centered text-center">
+            <h1>Тестирование программного обеспечения</h1>
+         </div>
+
+      </div>
+
+   </div> <!-- Page Title End-->
+
+   <!-- Content
+   ================================================== -->
+   <div class="content-outer">
+
+      <div id="page-content">
+
+         <div class="row add-bottom">
+
+            <div class="twelve columns" style="padding-top: 24px;">
+
+               <h1 class="title-heading">Метод белого ящика</h1><br/>
+
+               <p class="lead add-bottom"><b>Метод белого ящика</b> (white box testing, glass box testing) — у тестировщика есть доступ к внутренней структуре и коду приложения, а также есть достаточно знаний для понимания увиденного. Выделяют даже сопутствующую тестированию по методу белого ящика глобальную технику — тестирование на основе дизайна (design-based testing).</p>
+               <p class="lead add-bottom">Это тестирование внутренней структуры, дизайна и кодирования программного решения. В этом типе тестирования код виден тестеру. Основное внимание уделяется проверке потока входных и выходных данных через приложение, улучшению дизайна и удобства использования, усилению безопасности.</p>
+               <p class="lead add-bottom"><b>Что проверяют?</b></p>
+               <p class="lead add-bottom">Тестирование белого ящика включает тестирование программного кода для следующего:</p>
+               <p class="lead add-bottom">-	внутренние дыры в безопасности;</p>
+               <p class="lead add-bottom">-	сломанные или плохо структурированные пути в процессах кодирования;</p>
+               <p class="lead add-bottom">-	поток конкретных входов через код;</p>
+               <p class="lead add-bottom">-	ожидаемый результат;</p>
+               <p class="lead add-bottom">-	функциональность условных циклов;</p>
+               <p class="lead add-bottom">-	тестирование каждого оператора, объекта и функции на индивидуальной основе.</p>
+               <p class="lead add-bottom">Тестирование может проводиться на системном, интеграционном и модульном уровнях разработки программного обеспечения. Одной из основных целей тестирования whitebox является проверка рабочего процесса для приложения. Он включает в себя тестирование ряда предопределенных входных данных по отношению к ожидаемым или желаемым выходным данным, так что когда конкретный ввод не приводит к ожидаемому выходному сигналу, значит столкнулись с ошибкой.</p>
+               <p class="lead add-bottom"><b>Как проводится тестирование белого ящика?</b></p>
+               <p class="lead add-bottom">ШАГ 1) ПОНИМАТЬ ИСТОЧНИК КОДА</p>
+               <p class="lead add-bottom">Первое, что часто делает тестер, — это изучает и понимает исходный код приложения. Поскольку тестирование белого ящика включает в себя тестирование внутренней работы приложения, тестировщик должен быть очень хорошо осведомлен в языках программирования, используемых в тестируемых приложениях. Кроме того, тестирующий должен быть хорошо осведомлен о методах безопасного кодирования. Безопасность часто является одной из основных задач тестирования программного обеспечения. Тестер должен уметь обнаруживать проблемы с безопасностью и предотвращать атаки хакеров и наивных пользователей, которые могут вводить вредоносный код в приложение как сознательно, так и неосознанно.</p>
+               <p class="lead add-bottom">Шаг 2) СОЗДАТЬ ИСПЫТАТЕЛЬНЫЕ ДЕЛА И ИСПОЛНИТЬ</p>
+               <p class="lead add-bottom">Второй базовый шаг к тестированию белого ящика включает в себя тестирование исходного кода приложения на предмет правильной работы и структуры. Одним из способов является написание большего количества кода для проверки исходного кода приложения. Тестировщик разработает небольшие тесты для каждого процесса или серии процессов в приложении. Этот метод требует, чтобы тестировщик имел глубокие знания кода и часто выполнялся разработчиком. Другие методы включают ручное тестирование, тестирование и тестирование на ошибки, а также использование инструментов тестирования. </p>
+               <p class="lead add-bottom"><b>Пример тестирования WhiteBox</b></p>
+			   <br><center><img src="images/3.jpg" width="50%"></center><br>
+               <p class="lead add-bottom">Целью тестирования WhiteBox является проверка всех ветвей решений, циклов, операторов в коде.</p>
+               <p class="lead add-bottom">Чтобы выполнить утверждения в приведенном выше коде, тестовые случаи WhiteBox будут:</p>
+               <p class="lead add-bottom">- A = 1, B = 1</p>
+               <p class="lead add-bottom">- А = -1, В = -3</p>
+               <p class="lead add-bottom"><b>Лучшие инструменты тестирования White Box:</b></p>
+               <p class="lead add-bottom"><a href="https://www.parasoft.com/products/parasoft-jtest/">Parasoft Jtest</a></p>
+               <p class="lead add-bottom"><a href="https://www.eclemma.org/">EclEmma</a></p>
+               <p class="lead add-bottom"><a href="https://nunit.org/">NUnit</a></p>
+               <p class="lead add-bottom"><a href="http://pyunit.sourceforge.net/">PyUnit</a></p>
+               <p class="lead add-bottom"><a href="https://htmlunit.sourceforge.io/">HtmlUnit</a></p>
+               <p class="lead add-bottom"><a href="http://cppunit.sourceforge.net/doc/cvs/cppunit_cookbook.html">CppUnit</a></p>
+            <hr>
+
+            </div>
+
+         </div> <!-- Row End-->
+
+
+      </div> <!-- page-content End-->
+
+   </div> <!-- Content End-->
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+            <ul class="copyright">
+               <li>Калужский техникум электронных приборов 2021</a></li>               
+            </ul>
+
+         </div>
+
+         <div id="go-top" style="display: block;"><a title="Back to Top" href="#">Go To Top</a></div>
+
+      </div>
+
+   </footer> 
+
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/doubletaptogo.js"></script>
+   <script src="js/init.js"></script>
+
+</body>
+
+</html>

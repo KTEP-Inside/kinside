@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en"> 
+<head>
+
+   <meta charset="utf-8">
+	<title>Тестирование программного обеспечения</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+	<script src="js/modernizr.js"></script>
+	<link rel="shortcut icon" href="favicon.ico" >
+
+</head>
+
+<body>
+   <header>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+
+            <nav id="nav-wrap">
+               <a class="mobile-btn" href="#nav-wrap" title="Показать разделы">Показать разделы</a>
+	            <a class="mobile-btn" href="#" title="Скрыть разделы">Скрыть разделы</a>
+               <ul id="nav" class="nav">
+
+
+	               <li><a href="index.html">Главная</a></li>
+	               <li><a href="osnovnoe.html">Основные понятия</a></li>
+                   <li><span><a>Типы ошибок и методы отладки</a></span>
+						<ul>
+							<li><a href="type_metods.html">Типы ошибок</a></li>
+							<li><a href="type_metods2.html">Отладка и тестирование программ</a></li>
+						</ul>
+                   </li>
+	               <li><span><a>Процессы тестирования и разработки ПО</a></span>
+						<ul>
+							<li><a href="proc.html">Модели разработки ПО</a></li>
+							<li><a href="proc2.html">Жизненный цикл тестирования</a></li>
+						</ul>
+	               </li>
+	               <li class="current"><span><a>Классификация тестирования</a></span>
+						<ul>
+							<li><a href="upr.html">Метод белого ящика</a></li>
+							<li><a href="upr2.html">Метод чёрного ящика</a></li>
+							<li><a href="upr3.html">Ручное тестирование</a></li>
+							<li><a href="upr4.html">Автоматизированное тестирование</a></li>
+							<li><a href="upr5.html">Модульное (компонентное) тестирование</a></li>
+							<li><a href="upr6.html">Интеграционное тестирование</a></li>
+						</ul>
+	               </li>
+                   <li><span><a>Тест-кейс</a></span>
+						<ul>
+							<li><a href="test.html">Описание</a></li>
+							<li><a href="test2.html">Практическая работа № 1</a></li>
+							<li><a href="test3.html">Практическая работа № 2</a></li>
+						</ul>
+                   </li>
+               </ul> <!-- end #nav -->
+
+            </nav> <!-- end #nav-wrap -->
+
+         </div>
+
+      </div>
+
+   </header> <!-- Header End -->
+
+   <!-- Page Title
+   ================================================== -->
+   <div id="page-title">
+
+      <div class="row">
+
+         <div class="ten columns centered text-center">
+            <h1>Тестирование программного обеспечения</h1>
+         </div>
+
+      </div>
+
+   </div> <!-- Page Title End-->
+
+   <!-- Content
+   ================================================== -->
+   <div class="content-outer">
+
+      <div id="page-content">
+
+         <div class="row add-bottom">
+
+            <div class="twelve columns" style="padding-top: 24px;">
+
+               <h1 class="title-heading">Метод чёрного ящика</h1><br/>
+
+               <p class="lead add-bottom"><b>Метод чёрного ящика</b> (black box testing, closed box testing) — у тестировщика либо нет доступа к внутренней структуре и коду приложения, либо недостаточно знаний для их понимания, либо он сознательно не обращается к ним в процессе тестирования. При этом абсолютное большинство видов тестирования работают по методу чёрного ящика, идею которого в альтернативном определении можно сформулировать так: тестировщик оказывает на приложение воздействия (и проверяет реакцию) тем же способом, каким при реальной эксплуатации приложения на него воздействовали бы пользователи или другие приложения. В рамках тестирования по методу чёрного ящика основной информацией для создания тест-кейсов выступает документация (особенно — требования) и общий здравый смысл (для случаев, когда поведение приложения в некоторой ситуации не регламентировано явно; иногда это называют «тестированием на основе неявных требований»).</p>
+               <p class="lead add-bottom">BLACK BOX TESTING определяется как методика тестирования, при которой функциональность тестируемого приложения (AUT) тестируется без учета внутренней структуры кода, деталей реализации и знания внутренних путей программного обеспечения. Этот тип тестирования полностью основан на требованиях и спецификациях программного обеспечения. В BlackBox Testing просто фокусируются на входах и выходах программной системы, не заботясь о внутренних знаниях программ.</p>
+			   <br><center><img src="images/4.jpg" width="50%"></center><br>
+               <p class="lead add-bottom"><b>Общие шаги, которые необходимо выполнить для проведения любого типа тестирования черного ящика:</b></p>
+               <p class="lead add-bottom">-	сначала рассматриваются требования и спецификации системы;</p>
+               <p class="lead add-bottom">-	тестер выбирает допустимые входные данные (положительный сценарий тестирования), чтобы проверить, правильно ли их обрабатывает SUT. Кроме того, некоторые недействительные входные данные (сценарий отрицательного тестирования) выбираются для проверки того, что SUT может их обнаружить;</p>
+               <p class="lead add-bottom">-	тестер определяет ожидаемые результаты для всех этих входов;</p>
+               <p class="lead add-bottom">-	тестировщик программного обеспечения создает тестовые наборы с выбранными входами;</p>
+               <p class="lead add-bottom">-	тестовые случаи выполнены;</p>
+               <p class="lead add-bottom">-	тестер программного обеспечения сравнивает фактические результаты с ожидаемыми результатами;</p>
+               <p class="lead add-bottom">-	дефекты, если таковые имеются, исправлены и перепроверены.</p>
+               <p class="lead add-bottom"><b>Инструменты, используемые для тестирования черного ящика</b>, во многом зависят от типа тестирования черного ящика:</p>
+               <p class="lead add-bottom">-	для функциональных/регрессионных тестов можно использовать <a href="https://www8.hp.com/us/en/solutions/business-solutions/printingsolutions/overview.html"> QTP</a>, <a href="https://www.selenium.dev/">Selenium;</a></p>
+               <p class="lead add-bottom">- для нефункциональных тестов — <a href="https://www.microfocus.com/en-us/products/loadrunner-professional/overview">LoadRunner</a>, <a href="https://jmeter.apache.org/">Jmeter</a>.</p>
+               <p class="lead add-bottom">Методы белого и чёрного ящика не являются конкурирующими или взаимоисключающими —напротив, они гармонично дополняют друг друга, компенсируя таким образом имеющиеся недостатки.</p>
+            <hr>
+
+            </div>
+
+         </div> <!-- Row End-->
+
+
+      </div> <!-- page-content End-->
+
+   </div> <!-- Content End-->
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+            <ul class="copyright">
+               <li>Калужский техникум электронных приборов 2021</a></li>               
+            </ul>
+
+         </div>
+
+         <div id="go-top" style="display: block;"><a title="Back to Top" href="#">Go To Top</a></div>
+
+      </div>
+
+   </footer> 
+
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/doubletaptogo.js"></script>
+   <script src="js/init.js"></script>
+
+</body>
+
+</html>

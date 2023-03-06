@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en"> 
+<head>
+
+   <meta charset="utf-8">
+	<title>Тестирование программного обеспечения</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+	<script src="js/modernizr.js"></script>
+	<link rel="shortcut icon" href="favicon.ico" >
+
+</head>
+
+<body>
+   <header>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+
+            <nav id="nav-wrap">
+               <a class="mobile-btn" href="#nav-wrap" title="Показать разделы">Показать разделы</a>
+	            <a class="mobile-btn" href="#" title="Скрыть разделы">Скрыть разделы</a>
+               <ul id="nav" class="nav">
+
+
+	               <li><a href="index.html">Главная</a></li>
+	               <li><a href="osnovnoe.html">Основные понятия</a></li>
+                   <li><span><a>Типы ошибок и методы отладки</a></span>
+						<ul>
+							<li><a href="type_metods.html">Типы ошибок</a></li>
+							<li><a href="type_metods2.html">Отладка и тестирование программ</a></li>
+						</ul>
+                   </li>
+	               <li><span><a>Процессы тестирования и разработки ПО</a></span>
+						<ul>
+							<li><a href="proc.html">Модели разработки ПО</a></li>
+							<li><a href="proc2.html">Жизненный цикл тестирования</a></li>
+						</ul>
+	               </li>
+	               <li class="current"><span><a>Классификация тестирования</a></span>
+						<ul>
+							<li><a href="upr.html">Метод белого ящика</a></li>
+							<li><a href="upr2.html">Метод чёрного ящика</a></li>
+							<li><a href="upr3.html">Ручное тестирование</a></li>
+							<li><a href="upr4.html">Автоматизированное тестирование</a></li>
+							<li><a href="upr5.html">Модульное (компонентное) тестирование</a></li>
+							<li><a href="upr6.html">Интеграционное тестирование</a></li>
+						</ul>
+	               </li>
+                   <li><span><a>Тест-кейс</a></span>
+						<ul>
+							<li><a href="test.html">Описание</a></li>
+							<li><a href="test2.html">Практическая работа № 1</a></li>
+							<li><a href="test3.html">Практическая работа № 2</a></li>
+						</ul>
+                   </li>
+               </ul> <!-- end #nav -->
+
+            </nav> <!-- end #nav-wrap -->
+
+         </div>
+
+      </div>
+
+   </header> <!-- Header End -->
+
+   <!-- Page Title
+   ================================================== -->
+   <div id="page-title">
+
+      <div class="row">
+
+         <div class="ten columns centered text-center">
+            <h1>Тестирование программного обеспечения</h1>
+         </div>
+
+      </div>
+
+   </div> <!-- Page Title End-->
+
+   <!-- Content
+   ================================================== -->
+   <div class="content-outer">
+
+      <div id="page-content">
+
+         <div class="row add-bottom">
+
+            <div class="twelve columns" style="padding-top: 24px;">
+
+               <h1 class="title-heading">Интеграционное тестирование</h1><br/>
+
+               <p class="lead add-bottom">Это тип тестирования, при котором программные модули интегрируются логически и тестируются как группа. Типичный программный проект состоит из нескольких программных модулей, закодированных разными программистами. Целью данного уровня тестирования является выявление дефектов взаимодействия между этими программными модулями при их интеграции.</p>
+               <p class="lead add-bottom">Интеграционное тестирование фокусируется на проверке обмена данными между этими модулями. Следовательно, оно также называется  «I & T»  (интеграция и тестирование).</p>
+               <p class="lead add-bottom"><b>Пример интеграционного теста</b></p>
+               <p class="lead add-bottom">Интеграционный тестовый пример отличается от других тестовых примеров тем, что он сосредоточен в основном на интерфейсах и потоке данных / информации между модулями. Здесь приоритет должен быть отдан интегрирующим ссылкам, а не функциям блока, которые уже проверены.</p>
+               <p class="lead add-bottom">Тестовые примеры интеграции для следующего сценария: </p>
+               <p class="lead add-bottom">Приложение имеет 3 модуля, например «Страница входа», «Почтовый ящик» и «Удалить электронную почту», и каждый из них интегрирован логически.</p>
+               <p class="lead add-bottom">Здесь не зацикливайтесь на тестировании страницы входа, как это уже было сделано в модульном тестировании. Но проверьте, как это связано со страницей почтового ящика.</p>
+               <p class="lead add-bottom">Аналогично, почтовый ящик: проверьте его интеграцию с модулем удаления почты.</p>
+               <p class="lead add-bottom"><b>Что такое заглушка и драйвер?</b></p>
+               <p class="lead add-bottom">Это фиктивные программы, кторые не реализуют всю логику программирования программного модуля, а только моделируют обмен данными с вызывающим модулем.</p>
+               <p class="lead add-bottom">Заглушка : вызывается тестируемым модулем.</p>
+               <p class="lead add-bottom">Драйвер : вызывает модуль для тестирования.</p>
+               <p class="lead add-bottom"><b>Процедура тестирования интеграции</b> независимо от стратегий тестирования программного обеспечения:</p>
+               <p class="lead add-bottom">- подготовьте план интеграционных тестов;</p>
+               <p class="lead add-bottom">- разработка тестовых сценариев, случаев и сценариев;</p>
+               <p class="lead add-bottom">- выполнение тестовых случаев с последующим сообщением о дефектах;</p>
+               <p class="lead add-bottom">- отслеживание и повторное тестирование дефектов;</p>
+               <p class="lead add-bottom">- шаги 3 и 4 повторяются до успешного завершения интеграции.</p>
+            <hr>
+
+            </div>
+
+         </div> <!-- Row End-->
+
+
+      </div> <!-- page-content End-->
+
+   </div> <!-- Content End-->
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+            <ul class="copyright">
+               <li>Калужский техникум электронных приборов 2021</a></li>               
+            </ul>
+
+         </div>
+
+         <div id="go-top" style="display: block;"><a title="Back to Top" href="#">Go To Top</a></div>
+
+      </div>
+
+   </footer> 
+
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/doubletaptogo.js"></script>
+   <script src="js/init.js"></script>
+
+</body>
+
+</html>
