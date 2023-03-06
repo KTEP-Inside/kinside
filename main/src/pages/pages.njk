@@ -1,0 +1,21 @@
+---
+layout: page.njk
+permalink: index.html
+pagination:
+  data: collections.site
+  size: 5
+---
+{% include "header.njk" %}
+<main>
+  <ul>
+    {% for site in pagination.items %}
+      <li>
+        <h2>{{site.data.title}}</h2>
+        <img src='sites/{{ site.data.name }}/image.jpg'/>
+        <p>{{ site.data.description }}</p>
+        <a href='{{ site.data.url }}'>Перейти на сайт</a>
+      </li>
+    {% endfor %}
+  </ul>
+</main>
+{% include "footer.njk" %}

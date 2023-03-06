@@ -1,4 +1,10 @@
 .gitignore
 Dockerfile
 *.conf.*
-
+node_modules
+dist
+.git
+.dockerignore
+_*
+tests
+*.test.*
