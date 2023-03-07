@@ -4,7 +4,8 @@
  * @returns
  */
 module.exports = (config) => {
-  config.addPassthroughCopy('src/sites/*/*.(webp|jpg)')
+	config.addPassthroughCopy('src/sites/*/*.(webp|jpg)');
+	config.addPassthroughCopy('**/*.css');
 
 	return {
 		dir: {
