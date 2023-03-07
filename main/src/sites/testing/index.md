@@ -5,6 +5,14 @@ description: 'На этом сайте вы можете узнать что т�
   как их применять и многое другое'
 url: '/testing'
 name: 'testing'
+authors:
+  - 'Неизвестный'
+stack:
+  - 'HTML'
+  - 'CSS'
+  - 'JS'
+  - 'JQuery'
+createdAt: 2021-12-12
 
 tags: site
 permalink: false

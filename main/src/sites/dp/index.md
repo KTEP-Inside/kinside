@@ -5,6 +5,14 @@ description: 'На этом сайте вы можете узнать требо
   а так же общие требования к оформлению отчетов.'
 url: '/dp'
 name: 'dp'
+authors:
+  - 'Неизвестный'
+stack:
+  - 'HTML'
+  - 'CSS'
+  - 'JS'
+  - 'JQuery'
+createdAt: 2022.12.12
 
 tags: site
 permalink: false

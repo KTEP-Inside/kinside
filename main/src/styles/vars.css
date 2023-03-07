@@ -1,0 +1,6 @@
+:root {
+	--primary-color-100: rgb(134, 85, 202);
+	--primary-color-40: rgba(134, 85, 202, 0.4);
+
+	--primary-color-light-100: rgb(166, 121, 228);
+}

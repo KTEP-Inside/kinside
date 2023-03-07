@@ -3,6 +3,8 @@
 	grid-template-rows: max-content 1fr;
 
 	height: clamp(300px, 70vh, 800px);
+
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .header__top {

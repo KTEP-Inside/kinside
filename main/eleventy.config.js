@@ -5,7 +5,18 @@
  */
 module.exports = (config) => {
 	config.addPassthroughCopy('src/sites/*/*.(webp|jpg)');
-	config.addPassthroughCopy('**/*.css');
+	config.addPassthroughCopy('src/styles');
+
+	config.addWatchTarget('src/styles');
+
+	config.addFilter('parseDate', (date) => {
+		const formatter = Intl.DateTimeFormat('ru');
+		return formatter.format(new Date(date));
+	});
+
+	config.setServerOptions({
+		liveReload: true,
+	});
 
 	return {
 		dir: {
@@ -15,5 +26,7 @@ module.exports = (config) => {
 			includes: 'includes',
 			layouts: 'layouts',
 		},
+		htmlTemplateEngine: 'njk',
+		dataTemplateEngine: 'njk',
 	};
 };

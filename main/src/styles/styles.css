@@ -1,5 +1,7 @@
 @import url('./normalize.css');
 @import url('./common.css');
+@import url('./vars.css');
 
 @import url('./blocks/page.css');
 @import url('./blocks/header.css');
+@import url('./blocks/pages.css');

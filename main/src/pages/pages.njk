@@ -3,22 +3,42 @@ layout: page.njk
 permalink: index.html
 pagination:
   data: collections.site
-  size: 5
+  size: 1
 ---
 {% include "header.njk" %}
-<main class="page__main">
-  <div class='container'>
-    <ul>
+<main class="page__main pages">
+  <div class='container pages__container'>
+    <h2 class='pages__header'>Доступные сайты</h2>
+    <ul class='pages__list'>
       {% for site in pagination.items %}
-        <li>
-          <h2>{{site.data.title}}</h2>
-          <img src='sites/{{ site.data.name }}/image.jpg'/>
-          <p>{{ site.data.description }}</p>
-          <a href='{{ site.data.url }}'>Перейти на сайт</a>
+        <li class='pages__item'>
+          <div class='pages__image-container'>
+            <img class='pages__image' src='sites/{{ site.data.name }}/image.jpg'/>
+          </div>
+          <div class='pages__info'>
+            <h3 class='pages__title'>{{ site.data.title }}</h3>
+            <ul class='pages__stack-list'>
+              {% for stack in site.data.stack %}
+                <li class='pages__stack-item'>
+                  {{ stack }}
+                </li>
+              {% endfor %}
+            </ul>
+            <p class='pages__description'>{{ site.data.description }}</p>
+            <div class='pages__meta'>
+              <p class='pages__authors'>
+              Авторы: {{ site.data.authors | join(", ") }}
+              </p>
+              <p >
+              Создан: {{ site.data.createdAt | parseDate }}
+              </p>
+            </div>
+
+            <a class='pages__link' href='{{ site.data.url }}'>Перейти на сайт</a>
+          </div>
         </li>
       {% endfor %}
     </ul>
   </div>
-
 </main>
 {% include "footer.njk" %}
