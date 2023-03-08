@@ -37,7 +37,7 @@ pagination:
 						<p class="site__authors">
 							Авторы: {{ site.data.authors | join(", ") }}
 						</p>
-						<p>Создан: {{ site.data.createdAt | parseDate }}</p>
+						<p>Создан: {{ site.data.date | parseDate }}</p>
 					</div>
 
 					<a class="site__link" href="{{ site.data.url }}">Перейти на сайт</a>

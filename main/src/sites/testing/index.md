@@ -12,7 +12,7 @@ stack:
   - 'CSS'
   - 'JS'
   - 'JQuery'
-createdAt: 2021-12-12
+date: 2021-12-12
 
 tags: site
 permalink: false
