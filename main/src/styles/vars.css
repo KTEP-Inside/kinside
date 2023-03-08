@@ -1,0 +1,16 @@
+:root {
+	--primary-color-100: rgb(113, 96, 207);
+	--primary-color-50: rgba(113, 96, 207, 0.5);
+	--primary-color-40: rgba(113, 96, 207, 0.4);
+
+	--primary-color-light-100: rgb(149, 135, 231);
+
+	--secondary-color-100: rgb(58, 204, 177);
+	--secondary-color-50: rgba(58, 204, 177, 0.5);
+
+	--third-color-100: rgb(206, 50, 169);
+
+	--base-color: black;
+	--base-color-light: rgb(97, 97, 97);
+	--shadow-color: rgb(230, 228, 228);
+}

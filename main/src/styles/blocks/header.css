@@ -1,0 +1,21 @@
+.header {
+	background-color: white;
+
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.header__container {
+	display: flex;
+	gap: 16px;
+	align-items: center;
+
+	padding: 16px 0;
+}
+
+.header__logo {
+}
+
+.header__title {
+	font-size: 36px;
+	font-weight: 700;
+}
