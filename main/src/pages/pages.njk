@@ -1,49 +1,51 @@
 ---
 eleventyComputed:
-  title: "{% if pagination.pageNumber > 0 %}Страница {{ pagination.pageNumber + 1 }}{% else %}{{ meta.title }}{% endif %}"
+  title: '{% if pagination.pageNumber > 0 %}Страница {{ pagination.pageNumber + 1 }}{% else %}{{ meta.title }}{% endif %}'
 layout: page.njk
-permalink: "{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}index.html"
+permalink: '{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}index.html'
 pagination:
   data: collections.site
   size: 6
 ---
 
-{% include "header.njk" %}
-{% include "banner.njk" %}
+{% include "header.njk" %} {% include "banner.njk" %}
 <main class="page__main pages">
-  <div class='container pages__container'>
-    <h2 class='pages__title'>Доступные сайты</h2>
-    <ul class='pages__list'>
-      {% for site in pagination.items %}
-        <li class='site pages__item'>
-          <div class='site__image-container'>
-            <img class='site__image' src='/sites/{{ site.data.name }}/image.jpg'/>
-          </div>
-          <div class='site__info'>
-            <h3 class='site__title'>{{ site.data.title }}</h3>
-            <ul class='site__stack-list'>
-              {% for stack in site.data.stack %}
-                <li class='site__stack-item'>
-                  {{ stack }}
-                </li>
-              {% endfor %}
-            </ul>
-            <p class='site__description'>{{ site.data.description }}</p>
-            <div class='site__meta'>
-              <p class='site__authors'>
-              Авторы: {{ site.data.authors | join(", ") }}
-              </p>
-              <p >
-              Создан: {{ site.data.createdAt | parseDate }}
-              </p>
-            </div>
+	<div class="container pages__container">
+		<h2 class="pages__title">Доступные сайты</h2>
+		<ul class="pages__list">
+			{% for site in pagination.items %}
+			<li class="site pages__item">
+				<div class="site__image-container">
+					<img
+						class="site__image"
+						src="/sites/{{ site.data.name }}/image.webp"
+						srcset="/sites/{{ site.data.name }}/image.jpg"
+						alt="{{ site.data.title }} изображение"
+					/>
+				</div>
+				<div class="site__info">
+					<h3 class="site__title">{{ site.data.title }}</h3>
+					<ul class="site__stack-list">
+						{% for stack in site.data.stack %}
+						<li class="site__stack-item">
+							{{ stack }}
+						</li>
+						{% endfor %}
+					</ul>
+					<p class="site__description">{{ site.data.description }}</p>
+					<div class="site__meta">
+						<p class="site__authors">
+							Авторы: {{ site.data.authors | join(", ") }}
+						</p>
+						<p>Создан: {{ site.data.createdAt | parseDate }}</p>
+					</div>
 
-            <a class='site__link' href='{{ site.data.url }}'>Перейти на сайт</a>
-          </div>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
-  {% include "pagination.njk" %}
+					<a class="site__link" href="{{ site.data.url }}">Перейти на сайт</a>
+				</div>
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
+	{% include "pagination.njk" %}
 </main>
 {% include "footer.njk" %}

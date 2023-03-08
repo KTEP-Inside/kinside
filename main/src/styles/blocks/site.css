@@ -30,20 +30,20 @@
 }
 
 .site__title {
-  font-size: 20px;
+	font-size: 20px;
 	font-weight: 500;
 	text-transform: uppercase;
 }
 
 .site__stack-list {
-  display: flex;
+	display: flex;
 	gap: 8px;
 
 	margin-bottom: 10px;
 }
 
 .site__stack-item {
-  display: inline-block;
+	display: inline-block;
 
 	padding: 4px 8px;
 
@@ -55,24 +55,24 @@
 }
 
 .site__description {
-  font-size: 16px;
+	font-size: 16px;
 	text-align: justify;
 }
 
 .site__meta {
-  display: grid;
+	display: grid;
 
 	font-size: 12px;
 }
 
 .site__authors {
-  display: flex;
+	display: flex;
 	align-items: baseline;
 	gap: 8px;
 }
 
 .site__link {
-  --pages-link-color: var(--primary-color-light-100);
+	--pages-link-color: var(--primary-color-light-100);
 
 	justify-self: end;
 
@@ -88,7 +88,6 @@
 
 	transition: box-shadow ease-in-out 250ms;
 }
-
 
 .site__link:hover {
 	--pages-link-color: var(--primary-color-100);

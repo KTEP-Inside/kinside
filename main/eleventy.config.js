@@ -14,6 +14,10 @@ module.exports = (config) => {
 		return formatter.format(new Date(date));
 	});
 
+  config.addFilter('year', (date) => {
+		return new Date(date).getFullYear();
+	});
+
 	config.setServerOptions({
 		liveReload: true,
 	});

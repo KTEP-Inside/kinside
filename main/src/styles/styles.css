@@ -4,6 +4,7 @@
 
 @import url('./blocks/page.css');
 @import url('./blocks/header.css');
+@import url('./blocks/footer.css');
 @import url('./blocks/banner.css');
 @import url('./blocks/pages.css');
 @import url('./blocks/pagination.css');
