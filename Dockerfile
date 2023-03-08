@@ -1,7 +1,8 @@
 FROM node:16-alpine as builder
 WORKDIR /static
-COPY ./main /static
+COPY ./main/package*.json /static/
 RUN npm i
+COPY ./main /static
 RUN npm run build
 
 FROM nginx:alpine
