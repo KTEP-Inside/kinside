@@ -8,6 +8,9 @@
 		"minify": "gulp build",
 		"build": "eleventy && npm run minify"
 	},
+  "engines": {
+    "node": "16.*.*"
+  },
 	"keywords": [],
 	"author": "Bricks666",
 	"license": "ISC",
