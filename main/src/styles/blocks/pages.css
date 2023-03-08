@@ -1,5 +1,8 @@
 .pages {
-	padding: 128px 0;
+	display: grid;
+	gap: 24px;
+
+	padding: 80px 0;
 
 	background-color: white;
 }
@@ -8,10 +11,10 @@
 	display: grid;
 	gap: 40px;
 
-	/* max-width: 1024px; */
+	width: 100%;
 }
 
-.pages__header {
+.pages__title {
 	text-align: center;
 	font-size: 36px;
 	text-transform: uppercase;
@@ -20,19 +23,14 @@
 
 .pages__list {
 	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 450px));
 	gap: 24px;
 }
 
 .pages__item {
-	display: grid;
-	grid-template-rows: max-content 1fr;
-	gap: 16px;
-
-	min-height: 400px;
-
 	border-radius: 8px;
 
-	box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 2px 16px var(--shadow-color);
 
 	overflow: hidden;
 
@@ -41,114 +39,11 @@
 
 .pages__item:hover,
 .pages__item:focus-within {
-	box-shadow: 0 2px 16px var(--primary-color-40);
-}
-
-.pages__image-container {
-	height: 100%;
-
-	overflow: hidden;
-}
-
-.pages__image {
-	display: block;
-
-	width: 100%;
-	height: 100%;
-
-	object-fit: contain;
-}
-
-.pages__info {
-	display: grid;
-	grid-template-rows: max-content max-content 1fr max-content max-content;
-	gap: 10px;
-
-	padding: 24px;
-}
-
-.pages__title {
-	font-size: 20px;
-	font-weight: 500;
-	text-transform: uppercase;
-}
-
-.pages__stack-list {
-	display: flex;
-	gap: 8px;
-
-	margin-bottom: 10px;
-}
-
-.pages__stack-item {
-	display: inline-block;
-
-	padding: 4px 8px;
-
-	font-size: 11px;
-
-	background-color: gainsboro;
-
-	border-radius: 8px;
-}
-
-.pages__description {
-	font-size: 16px;
-	text-align: justify;
-}
-
-.pages__meta {
-	display: grid;
-
-	font-size: 12px;
-}
-
-.pages__authors {
-	display: flex;
-	align-items: baseline;
-	gap: 8px;
-}
-
-.pages__link {
-	--pages-link-color: var(--primary-color-light-100);
-
-	justify-self: end;
-
-	display: block;
-
-	width: max-content;
-
-	color: var(--pages-link-color);
-	text-decoration: none;
-	font-size: 14px;
-
-	box-shadow: 0 5px 0 0 var(--pages-link-color);
-
-	transition: box-shadow ease-in-out 250ms;
-}
-
-.pages__link:hover {
-	--pages-link-color: var(--primary-color-100);
-
-	outline: none;
-}
-
-.pages__link:focus-visible {
-	--pages-link-color: var(--primary-color-100);
-
-	box-shadow: 0 0 0 5px var(--pages-link-color);
-
-	outline: none;
-}
-
-@media (width > 800px) {
-	.pages__list {
-		grid-template-columns: repeat(auto-fit, minmax(300px, 450px));
-	}
+	box-shadow: 0 2px 16px var(--primary-color-50);
 }
 
 @media (width <= 800px) {
-	.pages__header {
+	.pages__title {
 		font-size: 32px;
 	}
 }

@@ -8,5 +8,6 @@
 
 	margin: 0;
 
+  color: var(--base-color);
 	font-family: 'Roboto', sans-serif;
 }

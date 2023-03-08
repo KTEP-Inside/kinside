@@ -1,9 +1,0 @@
-{% if pagination.items | length != 0 %}
-  <nav>
-    <ul>
-      {% for page in pagination.hrefs %}
-        <li>{{ page }}</li>
-      {% endfor %}
-    </ul>
-  </nav>
-{% endif %}
