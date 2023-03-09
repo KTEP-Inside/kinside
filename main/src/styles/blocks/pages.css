@@ -4,7 +4,7 @@
 
 	padding: 80px 0;
 
-	background-color: white;
+	background-color: var(--background-color-10);
 }
 
 .pages__container {
@@ -30,16 +30,9 @@
 .pages__item {
 	border-radius: 8px;
 
-	box-shadow: 0 2px 16px var(--shadow-color);
-
 	overflow: hidden;
 
 	transition: box-shadow ease-in-out 250ms;
-}
-
-.pages__item:hover,
-.pages__item:focus-within {
-	box-shadow: 0 2px 16px var(--primary-color-50);
 }
 
 @media (width <= 1024px) {

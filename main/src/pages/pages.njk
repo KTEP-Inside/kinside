@@ -5,7 +5,7 @@ layout: page.njk
 permalink: '{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}index.html'
 pagination:
   data: collections.site
-  size: 6
+  size: 1
 ---
 
 {% include "header.njk" %} {% include "banner.njk" %}
@@ -40,7 +40,7 @@ pagination:
 						<p>Создан: {{ site.data.date | parseDate }}</p>
 					</div>
 
-					<a class="site__link" href="{{ site.data.url }}">Перейти на сайт</a>
+					<a class="link site__link" href="{{ site.data.url }}">Перейти на сайт</a>
 				</div>
 			</li>
 			{% endfor %}

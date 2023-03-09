@@ -4,6 +4,8 @@
 	gap: 16px;
 
 	min-height: 400px;
+
+	background-color: var(--background-color-20);
 }
 
 .site__image_container {
@@ -47,9 +49,11 @@
 
 	padding: 4px 8px;
 
-	font-size: 11px;
+	font-size: 12px;
+	font-family: monospace;
+	font-weight: 500;
 
-	background-color: gainsboro;
+	background-color: var(--background-color-30);
 
 	border-radius: 8px;
 }
@@ -72,33 +76,7 @@
 }
 
 .site__link {
-	--pages-link-color: var(--primary-color-light-100);
-
 	justify-self: end;
 
-	display: block;
-
 	width: max-content;
-
-	color: var(--pages-link-color);
-	text-decoration: none;
-	font-size: 14px;
-
-	box-shadow: 0 5px 0 0 var(--pages-link-color);
-
-	transition: box-shadow ease-in-out 250ms;
-}
-
-.site__link:hover {
-	--pages-link-color: var(--primary-color-100);
-
-	outline: none;
-}
-
-.site__link:focus-visible {
-	--pages-link-color: var(--primary-color-100);
-
-	box-shadow: 0 0 0 5px var(--pages-link-color);
-
-	outline: none;
 }

@@ -1,0 +1,12 @@
+:root {
+	--primary-color-100: rgb(154, 93, 223);
+
+	--background-color-10: rgb(65, 65, 65);
+	--background-color-20: rgb(39, 39, 39);
+	--background-color-30: rgb(26, 26, 26);
+	--background-color-40: rgb(20, 20, 20);
+
+	--text-color: rgb(255, 255, 255);
+	--alternative-text-color: rgb(253, 253, 253);
+	--text-color-light: rgb(189, 182, 182);
+}
