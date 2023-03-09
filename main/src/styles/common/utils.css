@@ -1,0 +1,14 @@
+.visibility-hidden {
+	position: absolute;
+	top: -99999px;
+	left: -99999px;
+
+	width: 1px;
+	height: 1px;
+
+	margin: -1px;
+
+	font-size: 1px;
+
+  opacity: 0;
+}

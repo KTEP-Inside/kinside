@@ -21,3 +21,7 @@
 	font-size: 36px;
 	font-weight: 700;
 }
+
+.header__scheme-switcher {
+	margin-left: auto;
+}

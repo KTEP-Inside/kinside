@@ -10,3 +10,8 @@
 	--alternative-text-color: white;
 	--text-color-light: rgb(97, 97, 97);
 }
+
+.scheme-switcher {
+	--scheme-switcher-main-color: var(--text-color);
+	--scheme-switcher-alternative-color: var(--background-color-10);
+}
