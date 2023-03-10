@@ -23,6 +23,7 @@
 		"gulp-browserify": "^0.5.1",
 		"gulp-postcss": "^9.0.1",
 		"gulp-uglify": "^3.0.2",
+		"gulp-replace": "^1.1.4",
 		"html-minifier-terser": "^7.1.0",
 		"nunjucks": "^3.2.3",
 		"postcss-csso": "^6.0.1",
