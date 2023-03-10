@@ -1,9 +1,11 @@
 .footer {
 	padding: 48px 0;
 
-	color: white;
+	color: var(--text-color);
 
-	background-color: var(--base-color-light);
+	background-color: var(--background-color-20);
+
+	border-top: 5px solid var(--background-color-40);
 }
 
 .footer__container {
@@ -25,15 +27,9 @@
 }
 
 .footer__link {
-	color: white;
-	text-decoration: none;
-	font-weight: 700;
-	font-size: 15px;
-}
+	--link-color: var(--text-color);
 
-.footer__link:hover,
-.footer__link:focus-visible {
-	text-decoration: underline;
+	font-size: 15px;
 }
 
 .footer__middle {
@@ -62,6 +58,6 @@
 		grid-template-columns: 1fr;
 		gap: 32px;
 
-    text-align: center;
+		text-align: center;
 	}
 }

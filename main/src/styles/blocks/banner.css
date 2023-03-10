@@ -1,5 +1,5 @@
 .banner {
-	height: clamp(300px, 70vh, 800px);
+	height: clamp(300px, 65vh, 700px);
 
 	background-image: linear-gradient(
 		149deg,

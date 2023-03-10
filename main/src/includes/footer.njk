@@ -10,13 +10,13 @@
 				собственных проектов и размещения полезной информации.
         При желании помочь в поддержке сайта и/или разместить свой сайт, обращайтесь
 				к
-				<a class="footer__link" href="{{ meta.support.href }}">{{
+				<a class="link footer__link" href="{{ meta.support.href }}">{{
 					meta.support.name
 				}}</a>
       </p>
       <p class="footer__authors">
 				Первые исполнители: {% for author in meta.authors %}
-          <a class="footer__link" href="{{ author.href }}">{{ author.name }}</a
+          <a class="link footer__link" href="{{ author.href }}">{{ author.name }}</a
 				>
           {% if loop.last != true %},{% endif %}
         {% endfor %}

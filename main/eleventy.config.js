@@ -9,8 +9,10 @@ const { IMG_PATTERN } = require('./config');
 module.exports = (config) => {
 	config.addPassthroughCopy(`src/sites/**/${IMG_PATTERN}`);
 	config.addPassthroughCopy('src/styles');
+	config.addPassthroughCopy('src/scripts');
 
 	config.addWatchTarget('src/styles');
+	config.addWatchTarget('src/scripts');
 
 	config.addFilter('parseDate', (date) => {
 		const formatter = Intl.DateTimeFormat('ru');
