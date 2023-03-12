@@ -1,4 +1,5 @@
 const fs = require("fs");
+const path = require("path");
 
 const gulp = require("gulp");
 const rimraf = require("rimraf");
@@ -55,36 +56,30 @@ gulp.task("styles::schemes::postcss", () => {
  * Processing JS
  */
 
-gulp.task("scripts", () => {
-	return rollup
-		.rollup({
-			input: "../src/scripts/scripts.js",
-			output: {
-				file: "../dist/scripts/scripts.js",
-				format: "iife",
-			},
-			plugins: [
-				resolve(),
-				babel({
-					root: process.cwd(),
-				}),
-				terser(),
-			],
-		})
-		.then((bundle) => {
-			return bundle.write({
-				file: "../dist/scripts/scripts.js",
-				format: "iife",
-			});
-		});
-});
+gulp.task("scripts", async () => {
+	console.log(__dirname, path.resolve("."));
 
-/**
- * Maybe shouldn't copy on build stage and copy only inside docker file
- */
-// gulp.task("copy-sites", () => {
-// 	return gulp.src("sites/**/*.*").pipe(gulp.dest("../dist/sites"));
-// });
+	const bundle = await rollup.rollup({
+		input: "../src/scripts/scripts.js",
+		output: {
+			file: "../dist/scripts/scripts.js",
+			format: "iife",
+		},
+		plugins: [
+			resolve(),
+			babel({
+				babelHelpers: "bundled",
+        root: path.resolve('configs')
+			}),
+			terser(),
+		],
+	});
+
+	return bundle.write({
+		file: "../dist/scripts/scripts.js",
+		format: "iife",
+	});
+});
 
 gulp.task("clean", () => {
 	return rimraf(["../dist/styles/styles.css"], {
@@ -99,7 +94,6 @@ gulp.task(
 		"styles::schemes::postcss",
 		"styles::inline",
 		"scripts",
-		// "copy-sites",
 		"clean"
 	)
 );

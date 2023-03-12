@@ -7,7 +7,8 @@
 		"dev": "eleventy --config=./configs/eleventy.config.dev.js --serve --quiet",
 		"11ty": "eleventy --config=./configs/eleventy.config.prod.js",
 		"minify": "gulp build -f  ./configs/gulpfile.js",
-		"build": "rimraf dist &&  npm run 11ty && npm run minify"
+		"build": "rimraf dist &&  npm run 11ty && npm run minify",
+    "gen:site": "node ./scripts/new-site.js"
 	},
 	"keywords": [],
 	"author": "Bricks666",

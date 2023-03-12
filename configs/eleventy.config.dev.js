@@ -12,6 +12,7 @@ module.exports = (config) => {
 
 	config.addWatchTarget("src/styles");
 	config.addWatchTarget("src/scripts");
+	config.addWatchTarget("src/sites/**/*.md");
 
 	config.setServerOptions({
 		liveReload: true,
