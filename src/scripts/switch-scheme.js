@@ -9,7 +9,7 @@ const controls = document.querySelectorAll(".scheme-switcher__control");
 const SCHEME_KEY = "KI-color-scheme";
 
 const setupSwitcher = () => {
-	const scheme = getSavedScheme();
+	const scheme = getSavedScheme() || "auto";
 
 	if (scheme !== null) {
 		const target = document.querySelector(

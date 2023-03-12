@@ -8,3 +8,4 @@ dist
 _*
 tests
 *.test.*
+.github
