@@ -7,6 +7,7 @@ const { IMG_PATTERN } = require('./config.js');
  */
 module.exports = (config) => {
 	config.addPassthroughCopy(`src/sites/**/${IMG_PATTERN}`);
+	config.addPassthroughCopy(`src/fonts`);
 	config.addPassthroughCopy(`src/images`);
 
 	config.addFilter('parseDate', (date) => {

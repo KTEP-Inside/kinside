@@ -1,4 +1,6 @@
 :root {
+	--monospace-fonts: "Red Hat Mono", monospace;
+
 	--secondary-color-100: rgb(58, 204, 177);
 	--secondary-color-50: rgba(58, 204, 177, 0.5);
 

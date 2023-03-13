@@ -1,50 +1,49 @@
 <header class="header page__header">
-  <div class="container header__container">
-    <img src="$" alt="{{ meta.title }}" class="header__logo"/>
-    <h1 class="header__title">{{ meta.title }}</h1>
-    {#
-    Возможно, стоит вынести в отдельный инклюд или макрос
-     #}
-    <fieldset class="scheme-switcher header__scheme-switcher">
-      <legend class='visibility-hidden'>
-        Цветовая схема
-        </legend>
-      <input
+	<div class="container header__container">
+		<h1 class="logo">
+			<a class="link logo__link" href="/">{{ meta.short_title }}</a>
+		</h1>
+		{# Возможно, стоит вынести в отдельный инклюд или макрос #}
+		<fieldset class="scheme-switcher header__scheme-switcher">
+			<legend class="visibility-hidden">Цветовая схема</legend>
+			<input
 				class="scheme-switcher__control scheme-switcher__control--light visibility-hidden"
 				id="light-switcher"
 				type="radio"
+				aria-labelledby="light scheme switcher"
 				name="scheme"
 				value="light"
 			/>
-      <label class="scheme-switcher__label" for="light-switcher" >
-        {% include "icons/sun.njk" %}
-      </label>
-      <input
+			<label class="scheme-switcher__label" for="light-switcher">
+				{% include "icons/sun.njk" %}
+			</label>
+			<input
 				class="scheme-switcher__control scheme-switcher__control--auto visibility-hidden"
 				id="auto-switcher"
 				type="radio"
 				name="scheme"
+				aria-labelledby="auto scheme switcher"
 				value="auto"
 			/>
-      <label class="scheme-switcher__label" for="auto-switcher" >
-        {% include "icons/target.njk" %}
-      </label>
-      <input
+			<label class="scheme-switcher__label" for="auto-switcher">
+				{% include "icons/target.njk" %}
+			</label>
+			<input
 				class="scheme-switcher__control scheme-switcher__control--dark visibility-hidden"
 				id="dark-switcher"
 				type="radio"
 				name="scheme"
+				aria-labelledby="dark scheme switcher"
 				value="dark"
 			/>
-      <label class="scheme-switcher__label" for="dark-switcher" >
-        {% include "icons/moon.njk" %}
-      </label>
-      <div class="scheme-switcher__status">
-        <svg viewBox="0 0 24 24" fill='currentColor'>
-          <rect width="24" height="24" rx="4" ry="4"/>
-        </svg>
-
-      </div>
-    </fieldset>
-  </div>
+			<label class="scheme-switcher__label" for="dark-switcher">
+				{% include "icons/moon.njk" %}
+			</label>
+			<div class="scheme-switcher__status-bar">
+				<svg class='scheme-switcher__status' viewBox="0 0 24 24" fill="currentColor">
+					<rect width="24" height="24" rx="4" ry="4"/>
+				</svg>
+			</div>
+		</fieldset>
+	</div>
 </header>
