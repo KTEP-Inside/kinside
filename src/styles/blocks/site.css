@@ -16,13 +16,13 @@
 
 .site__image {
 	display: flex;
-  align-items: center;
-  justify-content: center;
+	align-items: center;
+	justify-content: center;
 
 	width: 100%;
 	height: 100%;
 
-  text-align: center;
+	text-align: center;
 
 	object-fit: cover;
 }
@@ -55,7 +55,7 @@
 	padding: 4px 8px;
 
 	font-size: 12px;
-	font-family: monospace;
+	font-family: var(--monospace-fonts);
 	font-weight: 500;
 
 	background-color: var(--background-color-30);
