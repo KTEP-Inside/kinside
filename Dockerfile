@@ -1,14 +1,14 @@
-FROM node:16-alpine as builder
+FROM node:alpine as builder
 WORKDIR /static
-COPY ./main/package*.json /static/
+COPY ./package*.json /static/
 RUN npm i
-COPY ./main /static
+COPY ./configs /static/configs
+COPY ./src  /static/src
 RUN npm run build
 
 FROM nginx:alpine
 COPY ./nginx.conf /etc/nginx/nginx.conf
 COPY --from=builder /static/dist/ /usr/share/nginx/html
-COPY ./ /usr/share/nginx/html/
-RUN rm -r /usr/share/nginx/html/main
+COPY ./sites /usr/share/nginx/html/sites
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
