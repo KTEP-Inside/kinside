@@ -1,0 +1,27 @@
+.header {
+	padding: 0.5em 0;
+
+	background-color: var(--background-color-10);
+
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.header__container {
+	display: flex;
+	gap: 16px;
+	align-items: center;
+
+	padding: 16px 0;
+}
+
+.header__logo {
+}
+
+.header__title {
+	font-size: 36px;
+	font-weight: 700;
+}
+
+.header__scheme-switcher {
+	margin-left: auto;
+}
