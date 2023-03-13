@@ -1,0 +1,31 @@
+<footer class="footer">
+  <div class="container footer__container">
+    <div class="foooter__left">
+      <h2 class="logo">{{ meta.short_title }}</h2>
+      <h3 class="footer__subtitle">{{ meta.title }}</h3>
+    </div>
+    <div class="footer__middle">
+      <p class="footer__description">
+				Сайт создан и поддерживается студентами техникума для тестирования
+				собственных проектов и размещения полезной информации.
+        При желании помочь в поддержке сайта и/или разместить свой сайт, обращайтесь
+				к
+				<a class="link footer__link" href="{{ meta.support.href }}">{{
+					meta.support.name
+				}}</a>
+      </p>
+      <p class="footer__authors">
+				Первые исполнители: {% for author in meta.authors %}
+          <a class="link footer__link" href="{{ author.href }}">{{ author.name }}</a
+				>
+          {% if loop.last != true %},{% endif %}
+        {% endfor %}
+      </p>
+    </div>
+    <div class="footer__right">
+      <p class="footer__rights">
+				Все права защищены 2023-{{ page.date | year }}
+      </p>
+    </div>
+  </div>
+</footer>
