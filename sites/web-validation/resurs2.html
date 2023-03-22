@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Валидация и стандарты W3C</title>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+</head>
+<body>
+<div id="container" class="width">
+    <header>
+    	<h1><a href="/">Валидация и <br>стандарты W3C</a></h1>
+    </header>
+    <nav>
+    		<ul>
+        		<li><a href="index.html">Основное</a></li>
+        	    <li><a href="standart.html">Стандарты валидации</a></li>
+         	   	<li><a href="mify.html">Мифы о валидности</a></li>
+          	  	<li class="selected"><a href="resurs.html">Валидатор HTML</a></li>
+        	</ul>
+    </nav>
+    <div id="body">
+		<section id="content" class="two-column with-right-sidebar">
+	    <article>
+			<h2>Нахождение ошибок в HTML с помощью валидатора w3c и их исправление</h2><br/>
+            <ol>
+				<li><a href="#1">No space between attributes.</a></li>
+				<li><a href="#2">The width attribute on the td element is obsolete. Use CSS instead.</a></li>
+				<li><a href="#3">An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.</a></li>
+				<li><a href="#4">Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections.</a></li>
+				<li><a href="#5">The hgroup element is obsolete. To mark up subheadings, consider either just putting the subheading into a p element after the h1-h6 element containing the main heading, or...</a></li>
+				<li><a href="#6">Element "noindex" undefined.</a></li>
+				<li><a href="#7">End tag for element "div" which is not open</a></li>
+				<li><a href="#8">Document type does not allow element "li" here; missing one of "ul", "ol", "menu", "dir" start-tag.</a></li>
+				<li><a href="#9">End tag for "div" omitted, but OMITTAG NO was specified.</a></li>
+				<li><a href="#10">There is no attribute "border".</a></li>
+				<li><a href="#11">Character "&lt;" is the first character of a delimiter but occurred as data.</a></li>
+				<li><a href="#12">Saw " when expecting an attribute name. Probable cause: = missing immediately before.</a></li>
+				<li><a href="#13">The align attribute on the img element is obsolete. Use CSS instead.</a></li>
+				<li><a href="#14">Bad value Блог Алексея Смирнова for attribute href on element link: Illegal character in path segment: not a URL code point.</a></li>
+            </ol><br/>
+            <h3><a name="1">1.</a> No space between attributes.</h3>
+            <p>…rel="shortcut icon" href="http://arbero.ru/favicon.ico" ; type="image/x-icon" Просто убираем "точку с запятой".</p>
+            <h3><a name="2">2.</a> The width attribute on the td element is obsolete. Use CSS instead.</h3>
+            <p>td valign="center" width="80" height="80" > </p>
+            <p>Подобное преобразуем к виду: td style="align:center; width:80; height: 80;"></p>
+            <h3><a name="3">3.</a> An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.</h3>
+            <p>Одна из самых частых ошибок. Просто не хватает альтернативного текста для картинки. Прописываем тег alt.</p>
+            <h3><a name="4">4.</a> Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections.</h3>
+            <p>section id="comments" > </p>
+            <p>Внутри блока section должны содержаться что-то из тегов h2-h6, если их нет, просто переименовываем слово section на div</p>
+            <h3><a name="5">5.</a> The hgroup element is obsolete. To mark up subheadings, consider either just putting the subheading into a p element after the h1-h6 element containing the main heading,</h3>
+            <p>or else putting the subheading directly within the h1-h6 element containing the main heading, but separated from the main heading by punctuation and/or within, for example, a span class="subheading" element with differentiated styling. To group headings and subheadings, alternative titles, or taglines, consider using the header or div elements.</p>
+            <p>Аналогично предыдущему пункту. Просто меняем фразу hgroup на div. Вы можете использовать инструмент "Найти/заменить все" в текстовом редакторе, чтобы ускорить подобные процессы.</p>
+            <h3><a name="6">6.</a> Element "noindex" undefined</h3>
+            <p>Чтобы тег noindex стал валидным, пишем его в виде комментирования, то есть так:</p>
+            <xmp style="font-size:16px;"><!--noindex-->Неиндексируем<!--/noindex--></xmp><br/>
+            <h3><a name="7">7.</a> End tag for element "div" which is not open</h3>
+            <p>Закрывающий тег div лишний. Убираем его.</p>
+            <h3><a name="8">8.</a> Document type does not allow element "li" here; missing one of "ul", "ol", "menu", "dir" start-tag</h3>
+            <p>Неправильное использование тега "li": отсутствует тег "ul", "ol" и др. Проверьте.</p>
+            <h3><a name="9">9.</a> End tag for "div" omitted, but OMITTAG NO was specified</h3>
+            <p>Не хватает закрывающего тега div.</p>
+            <h3><a name="10">10.</a> There is no attribute "border"</h3>
+            <xmp style="font-size:16px;">alt="" width="1" height="1" border="0"/></xmp><br/>
+            <p>Просто удаляем фразу border="0".</p>
+            <h3><a name="11">11.</a> Character "&lt;" is the first character of a delimiter but occurred as data</h3>
+            <p>Не используйте тег "&lt;" перед обычными словами, используйте лучше разные кавычки.</p>
+            <h3><a name="12">12.</a> Saw " when expecting an attribute name. Probable cause: = missing immediately before.</h3>
+            <p>Лишняя кавычка, удалите ее.</p>
+            <h3><a name="13">13.</a> The align attribute on the img element is obsolete. Use CSS instead.</h3>
+            <p>Не используйте значение align внутри тега img. Пропишите ее отдельно, в таком виде:</p>
+            <xmp style="font-size:16px;"><div align="center">тут картинка (img src)</div></xmp><br/>
+            <h3><a name="14">14.</a> Bad value for attribute href on element link: Illegal character in path segment: not a URL code point.</h3>
+            <p>То, что идет в href должно быть ссылкой, начинаться с http, но никак не слово.</p>
+		</article>
+        </section>
+        <aside class="sidebar big-sidebar right-sidebar">
+            <ul>	
+               <li>
+                    <h4>Ссылки</h4>
+                    <ul class="blocklist">
+                        <li><a href="resurs.html">Пример работы</a></li>
+                        <li><a class="selected" href="resurs2.html">Описание ошибок</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+    	<div class="clear"></div>
+    </div>
+    <footer>
+        <div class="footer-bottom">
+            <p>2019. <a href="http://ktep.kaluga.ru/">Калужский техникум электронных приборов</a></p>
+         </div>
+    </footer>
+</div>
+</body>
+</html>

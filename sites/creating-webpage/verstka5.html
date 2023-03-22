@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Разработка веб-страницы</title>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+</head>
+<body>
+<div id="container">
+
+    <header>
+	<div class="width">
+    		<center><h1><a>Разработка веб-страницы</a></h1></center>
+       	</div>
+    </header>
+
+    <nav>
+	<div class="width">
+    		<ul>
+        		<li><a href="index.html">Этапы</a></li>
+        		<li><a href="maket.html">Создание макета</a></li>
+          	  	<li><a href="gimp.html">Создание дизайна в Gimp</a></li>        	
+          	  	<li><a href="photoshop.html">Разработка макета в Photoshop</a></li>
+         	   	<li class="selected"><a href="verstka.html">Верстка</a></li>
+        	</ul>
+	</div>
+    </nav>
+
+    <div id="body" class="width">
+		<section id="content" class="two-column with-right-sidebar">
+	    <article>
+			<h2>Footer (подвал)</h2><br/>
+			<p>Завершающая часть шаблона — футер. Простое оформление, из элементов только абзацы и ссылки.</p>
+			<pre>
+#footer {
+	height: 44px;
+	clear: both;
+	padding-top: 20px;
+	background: url(images/footer.gif) repeat-x;
+	border-top: 5px solid #A6640E;
+}
+
+#footer p {
+	margin: 0;
+	font-size: 10px;
+	text-align: center;
+	color: #ffffff;
+}
+
+#footer a {
+	color: #ffffff;
+}			</pre>
+			<p>Обычно в футере размещается вспомогательная информация, добавим её в HTML-код (контейнер footer).</p>
+			<pre>
+&lt;p>Copyright © 2016. &lt;a href="http://test1.ru/" title="Адрес сайта">Адрес сайта&lt;/a> | <br />&lt;a href="#">Слоган сайта&lt;/a>&lt;/p>
+&lt;p>+7-(777)-777-77-77 | &lt;a href="#">Москва&lt;/a>&lt;/p>
+			</pre>
+			<p>На этом оформление сайта завершено. В результате получен законченный, готовый к использованию шаблон, части которого можно вынести в отдельные PHP-файлы, сделав из статической страницы динамическую.</p>
+			<center><img src="img/73.jpg"></center>
+			<p>Нужно добавить в CSS:</p>
+			<pre>
+#content {
+	margin: 0 auto;
+	background: #ffffff;
+	width: 786px;
+	text-align: left;
+}			</pre>
+			            
+		<br/><center><a href="verstka4.html" class="button">Назад</a>
+		<a class="button button-reversed">Далее</a></center>
+		</article>
+        </section>
+        <aside class="sidebar big-sidebar right-sidebar">
+            <ul>	
+               <li>
+                    <h4>Разделы</h4>
+                    <ul class="blocklist">
+                        <li><a href="verstka.html">Подготовительные действия</a></li>
+                        <li><a href="verstka2.html">Меню и логотип</a></li>
+                        <li><a href="verstka3.html">Рабочая область</a></li>
+                        <li><a href="verstka4.html">Левая панель</a></li>
+                        <li><a class="selected" href="verstka5.html">Footer (подвал)</a></li>
+                    </ul>
+                </li>
+            </ul>
+		
+        </aside>
+    	<div class="clear"></div>
+    </div>
+    <footer>
+        <div class="footer-bottom">
+            <p><a href="http://ktep.kaluga.ru/">Калужский техникум электронных приборов</a> 2019</p>
+         </div>
+    </footer>
+</div>
+</body>
+</html>

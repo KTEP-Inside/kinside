@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Разработка веб-страницы</title>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+</head>
+<body>
+<div id="container">
+
+    <header>
+	<div class="width">
+    		<center><h1><a>Разработка веб-страницы</a></h1></center>
+       	</div>
+    </header>
+
+    <nav>
+	<div class="width">
+    		<ul>
+        		<li class="selected"><a href="index.html">Этапы</a></li>
+        		<li><a href="maket.html">Создание макета</a></li>
+          	  	<li><a href="gimp.html">Создание дизайна в Gimp</a></li>        	
+          	  	<li><a href="photoshop.html">Разработка макета в Photoshop</a></li>
+         	   	<li><a href="verstka.html">Верстка</a></li>
+        	</ul>
+	</div>
+    </nav>
+
+    <div id="body" class="width">
+		<section id="content" class="two-column with-right-sidebar">
+	    <article>
+			<h2>Написание JS</h2><br/>
+            <p>Итак, заключительным этапом является написание JS скриптов. При создании веб страниц стало, практически, стандартом использование библиотеки jQuery, которая позволяет с лёгкостью манипулировать элементами web-страницы (DOM узлами), навешивать прослушку событий, отправлять запросы на сервер, обрабатывать результат выполнения и пр. Но не стоит слепо доверять трендам, на сегодняшний день нативный JavaScript достиг такого уровня, что возможно уже не нужен jQuery. Поэтому, прежде чем слепо прикреплять jQuery, стоит задуматься, так ли он нужен для задач и не достаточно ли встроенных возможностей языка JavaScript.</p>
+            <p>Есть неплохой ресурс, который приводит альтернативы одних и тех же манипуляций на языке JavaScript и с помощью библиотеки jQuery: <a href="http://youmightnotneedjquery.com/">http://youmightnotneedjquery.com/</a>, так же неплохим подспорьем является сайт <a href="https://developer.mozilla.org/ru/">https://developer.mozilla.org/ru/</a>, на котором, помимо описания методов и свойств JavaScript, можно найти полифиллы для тех или иных методов (библиотека или часть кода, которая добавляет в старые браузеры поддержку возможностей современных функций и методов JavaScript).</p>
+            <p>Важно отметить, что не рекомендуется использовать JavaScript для стилизации, то есть не стоит для того или иного объекта DOM (элемента страницы) добавлять портянку CSS свойств с помощью JavaScript, чтобы выделить его состояние и пр. Рекомендуется использовать классы, то есть заранее в CSS определить классы-состояния (активный, не активный, скрытый, использованный и пр.) и при манипуляции элементами просто добавлять или убирать соответствующие классы. </p>
+            <p>Например,  есть элемент списка с классом .list__item, для того, чтобы показать активный элемент в данный момент (выбран пользователем) или нет, можно просто добавить класс (.list__item--active), а не прописывать все стили, присущие этому классу в JS:</p>
+			<center><img src="img/94.png"></center>
+            <p>Не рекомендуется решать задачи, которые явно относятся к уровню CSS с помощью JavaScript, пытаясь как-то выровнять объект или добавить ему стили при наведении и пр.</p>
+
+		<br/><center><a href="index15.html" class="button">Назад</a>
+		<a class="button button-reversed">Далее</a></center>
+		</article>
+        </section>
+        <aside class="sidebar big-sidebar right-sidebar">
+            <ul>	
+               <li>
+                    <h4>Разделы</h4>
+                    <ul class="blocklist">
+                        <li><a href="index.html">Проработка макета</a></li>
+                        <li><a href="index2.html">Виды макетов</a></li>
+                        <li><a href="index3.html">Модульная сетка</a></li>
+                        <li><a href="index4.html">Макеты страниц</a></li>
+                        <li><a href="index5.html">Дизайн</a></li>
+                        <li><a href="index6.html">Элементы</a></li>
+                        <li><a href="index7.html">Схема просмотра</a></li>
+                        <li><a href="index8.html">Фреймворки</a></li>
+                        <li><a href="index9.html">Тренды</a></li>
+                        <li><a href="index10.html">Скевоморфизм</a></li>
+                        <li><a href="index11.html">Плоский дизайн</a></li>
+                        <li><a href="index12.html">Редакторы кода</a></li>
+                        <li><a href="index13.html">Структура проекта</a></li>
+                        <li><a href="index14.html">Написание HTML</a></li>
+                        <li><a href="index15.html">Создание CSS</a></li>
+                        <li><a class="selected" href="index16.html">Написание JS</a></li>
+                    </ul>
+                </li>
+            </ul>
+		
+        </aside>
+    	<div class="clear"></div>
+    </div>
+    <footer>
+        <div class="footer-bottom">
+            <p><a href="http://ktep.kaluga.ru/">Калужский техникум электронных приборов</a> 2019</p>
+         </div>
+    </footer>
+</div>
+</body>
+</html>

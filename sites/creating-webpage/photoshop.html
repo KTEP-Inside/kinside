@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Разработка веб-страницы</title>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+</head>
+<body>
+<div id="container">
+
+    <header>
+	<div class="width">
+    		<center><h1><a>Разработка веб-страницы</a></h1></center>
+       	</div>
+    </header>
+
+    <nav>
+	<div class="width">
+    		<ul>
+        		<li><a href="index.html">Этапы</a></li>
+        		<li><a href="maket.html">Создание макета</a></li>
+          	  	<li><a href="gimp.html">Создание дизайна в Gimp</a></li>        	
+          	  	<li class="selected"><a href="photoshop.html">Разработка макета в Photoshop</a></li>
+         	   	<li><a href="verstka.html">Верстка</a></li>
+        	</ul>
+	</div>
+    </nav>
+
+    <div id="body" class="width">
+		<section id="content" class="two-column with-right-sidebar">
+	    <article>
+			<h2>Создание дизайна сайта в Photoshop</h2><br/>
+            <p>Прежде чем верстать шаблон сайта в HTML/CSS, его надо проработать. Отрисовывать дизайн принято в программе Photoshop. Готовый макет сохраняется в файл формата .PSD.
+			В качестве примера создается дизайн сайта как на рисунке.</p>
+            <center><img src="img/30.jpg"></center>	
+            <p>1. Нужно открыть Photoshop и создать в нём новый документ (Файл -> Создать или Ctrl+N).</p>
+            <p>2. Устанавить начальные параметры. На практике продумать дизайн с точностью до пикселя практически невозможно — в процессе вёрстки обязательно нужно будет что-то поменять, переместить, переделать. Поэтому размеры можно задавать приблизительные, причём ширину и высоту документа желательно указывать заведомо больше планируемых размеров сайта, чтобы в макете точно уместились все элементы. Документ требуется сделать 1000 пикселей шириной и 1500 пикселей высотой. Другие параметры можно не трогать.</p>
+            <center><img src="img/31.jpg"></center>	
+            <p>3. Теперь нужно включить линейки. Во время работы они понадобятся, ведь линейки позволяют очень точно отмерять расстояния. Если линейки включены, то можно увидеть шкалы рядом с левой и под верхней панелью инструментов.</p>
+            <center><img src="img/32.jpg"></center>	
+            <p>Если линеек нет — необходимо включить их (Просмотр -> Линейки или Ctrl+R).</p>
+            <center><img src="img/33.jpg"></center>	
+            <p>Линейки должны показывать величину в пикселях. Для того, чтобы переключиться на них с другой меры длины, нужно щёлкнуть на линейке правой кнопкой мыши и в открывшемся меню установить соответствующий флажок.</p>
+            <center><img src="img/34.jpg"></center>	
+            <p>4. Далее следует проверить, чтобы размер шрифта был указан в пикселях, а не в пунктах. Если настроено не так, в меню Редактирование -> Настройки -> Основные, в отобразившемся окне перейти на вкладку Единицы измерения и линейки, в выпадающем списке Текст и выбрать Пиксели, после нажать OK.</p>
+            <p>5. Сразу необходимо сделать подложку сайта. Это градиентная заливка оранжевого, переходящего в жёлтый цвет. На панели слева выбирать инструмент Градиент.</p>
+            <center><img src="img/35.jpg"></center>	
+            <p>На панели вверху кнопка Зеркальный градиент, выбрать цвет левее на палитре.</p>
+            <center><img src="img/36.jpg"></center>	
+            
+		<br/><center><a  href="#" class="button">Назад</a>
+		<a href="photoshop2.html" class="button button-reversed">Далее</a></center>
+		</article>
+        </section>
+        <aside class="sidebar big-sidebar right-sidebar">
+            <ul>	
+               <li>
+                    <h4>Разделы</h4>
+                    <ul class="blocklist">
+                        <li><a class="selected" href="photoshop.html">Первая часть</a></li>
+                        <li><a href="photoshop2.html">Вторая часть</a></li>
+                        <li><a href="photoshop3.html">Третья часть</a></li>
+                        <li><a href="photoshop4.html">Четвертая часть</a></li>
+                        <li><a href="photoshop5.html">Пятая часть</a></li>
+                    </ul>
+                </li>
+            </ul>
+		
+        </aside>
+    	<div class="clear"></div>
+    </div>
+    <footer>
+        <div class="footer-bottom">
+            <p><a href="http://ktep.kaluga.ru/">Калужский техникум электронных приборов</a> 2019</p>
+         </div>
+    </footer>
+</div>
+</body>
+</html>

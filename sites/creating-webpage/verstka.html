@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Разработка веб-страницы</title>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+</head>
+<body>
+<div id="container">
+
+    <header>
+	<div class="width">
+    		<center><h1><a>Разработка веб-страницы</a></h1></center>
+       	</div>
+    </header>
+
+    <nav>
+	<div class="width">
+    		<ul>
+        		<li><a href="index.html">Этапы</a></li>
+        		<li><a href="maket.html">Создание макета</a></li>
+          	  	<li><a href="gimp.html">Создание дизайна в Gimp</a></li>        	
+          	  	<li><a href="photoshop.html">Разработка макета в Photoshop</a></li>
+         	   	<li class="selected"><a href="verstka.html">Верстка</a></li>
+        	</ul>
+	</div>
+    </nav>
+
+    <div id="body" class="width">
+		<section id="content" class="two-column with-right-sidebar">
+	    <article>
+			<h2>Верстка дизайна</h2><br/>
+			<p>После создания макета сайта в программе Photoshop надо сверстать его из PSD-макета в готовую веб-страницу, используя инструменты HTML-разметки и каскадные таблицы стилей (CSS) </p>
+            <center><img src="img/59.jpg"></center>
+            <p>Подходов к подготовке шаблонов существует множество: </p>
+            <ul>
+				<li>сначала досконально прорисовывается шаблон и только потом вёрстка;</li>
+				<li>отрисовка дизайна приблизительно, добавляя штрихи во время вёрстки;</li>
+				<li>сначала рисование, затем нарезка;</li>
+				<li>сохранение графических объектов непосредственно в процессе создания дизайна. </li>
+            </ul>	
+            <p>Инструменты вёрстки и рисования у каждого свои: </p>	
+            <ul>
+				<li>установка плагинов и работа в визуальных редакторах;</li>
+				<li>использование стандартного набора возможностей и верстка в простом редакторе. </li>
+            </ul>	
+            <p>Нужно создать где угодно (хоть на Рабочем столе, хоть в отдельной папке) файл index.html. В этот же каталог добавить директорию images. Она будет содержать все картинки, используемые в шаблоне и на странице. Так как графические элементы вырезали заблаговременно, их нужно скопировать в папку images с названиями:</p>	
+            <ul>
+				<li>back_all — подложка сайта;</li>
+				<li>header_top — фон шапки;</li>
+				<li>big_pic — логотип;</li>
+				<li>title — фон заголовков левой панели;</li>
+				<li>footer — заливка низа сайта;</li>
+				<li>1mini — первое фото для основной части страницы;</li>
+				<li>2mini — второе фото.</li>
+            </ul>	
+            <p>В папке со страницей index.html нужно создать файл styles.css — в нём будут размещены таблицы стилей шаблона.</p>	
+            <p>В папке со страницей index.html нужно создать файл styles.css — в нём будут размещены таблицы стилей шаблона.</p>	
+            <p>Для редактирования кода лучше подходит редактор Notepad++. Это подсвечивающая синтаксис разных языков (HTML и CSS — в том числе) программа.</p>
+            <h4>Разделение документа на блоки</h4>	
+            <p>Слудующим этапом требуется открыть документ index.html и вставить в него следующий код:</p>	
+            <pre>
+&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+&lt;meta charset="utf-8">
+&lt;title>Шаблон сайта&lt;/title>
+&lt;meta name="keywords" content="">
+&lt;meta name="description" content="">
+&lt;link href="styles.css" rel="stylesheet" type="text/css" media="screen">
+&lt;/head>
+&lt;body>
+&lt;/body>
+&lt;/html>
+            </pre>	
+            <p>Следующим этапом нужно сохранить файл.</p>	
+            <p>После создания основы HTML-страницы, теперь нужно разделить её на блоки — указать структуру документа, что за чем в нём будет идти.</p>	
+            <p>Блоков 7, перечисление их по идентификатору (значению атрибута id):</p>	
+            <ol>
+				<li>content — блок, внутри которого будут храниться остальные блоки;</li>
+				<li>header — блок шапки, внутри которого будут;</li>
+				<li>menu — верхняя навигация;</li>
+				<li>logo — картинка с текстом;</li>
+				<li>right — основная часть страницы;</li>
+				<li>left — панель слева;</li>
+				<li>footer — низ сайта.</li>
+            </ol>
+            <p>Теперь в контейнер &lt;body> нужно вставить код:</p>	
+            <pre>
+&lt;div id="content">
+&lt;!-- Шапка -->
+	&lt;div id="header">
+	  &lt;div id="menu">
+	  &lt;/div>
+	  &lt;div id="logo">
+	  &lt;/div>
+	&lt;/div>
+&lt;!-- Конец шапки -->
+&lt;!-- Основной блок -->
+	&lt;div id="right">
+	&lt;/div>
+&lt;!-- Конец основного блока -->
+&lt;!-- Левая панель -->
+	&lt;div id="left">
+	&lt;div>
+&lt;!-- Конец левой панели -->
+&lt;!-- Ноги сайта -->
+	&lt;div id="footer">
+	&lt;/div>
+&lt;!-- Конец -->
+&lt;/div>            </pre>	
+            <p>В браузере страница будет по-прежнему пустой, но структуру документа уже можно понять, она готова.</p>	
+            <h4>Установка базового форматирования</h4>	
+            <p>Следующий этап CSS-оформление, оно нужно чтобы задать документу начальное оформление. Нужно открыть style.css и добавить туда строки кода.</p>	
+            <p>Удаление отступа и полей на странице по умолчанию:</p>	
+            <pre>
+*
+{
+margin: 0px;
+padding: 0px;
+}            </pre>	
+            <p>Установка цвета ссылок в зависимости от поведения пользователя (навёл курсор, не навёл, посетил) и удаление подчёркивания у ссылок, над которыми находится указатель мыши:</p>	
+            <pre>
+a:link {
+	color: #D72020;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #FF0000;
+}
+
+a:visited {
+	color: #D72020;
+}            </pre>	
+            <p>Настройка основного оформления страницы: указание фонового цвет и изображения-подложки (картинке задать горизонтальное заполнение), устанавливаем цвет, стиль и размер шрифта:</p>	
+            <pre>
+body {
+	background: #FFD723 url(images/back_all.jpg) repeat-x;
+	font: 13px Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	color: #333333;
+}            </pre>	
+            <p>Определение блока content:</p>	
+            <pre>
+#content {
+	margin: 0 auto;
+	background: #ffffff;
+	width: 786px;
+	text-align: left;
+}            </pre>	
+            <p>Вот теперь можно обновить страницу. Она заполнена рисунком-подложкой. Пока единственное видимое изменение, за которое отвечает свойство background класса body.</p>	
+            <center><img src="img/60.jpg"></center>
+            
+		<br/><center><a href="#" class="button">Назад</a>
+		<a href="verstka2.html" class="button button-reversed">Далее</a></center>
+		</article>
+        </section>
+        <aside class="sidebar big-sidebar right-sidebar">
+            <ul>	
+               <li>
+                    <h4>Разделы</h4>
+                    <ul class="blocklist">
+                        <li><a class="selected" href="verstka.html">Подготовительные действия</a></li>
+                        <li><a href="verstka2.html">Меню и логотип</a></li>
+                        <li><a href="verstka3.html">Рабочая область</a></li>
+                        <li><a href="verstka4.html">Левая панель</a></li>
+                        <li><a href="verstka5.html">Footer (подвал)</a></li>
+                    </ul>
+                </li>
+            </ul>
+		
+        </aside>
+    	<div class="clear"></div>
+    </div>
+    <footer>
+        <div class="footer-bottom">
+            <p><a href="http://ktep.kaluga.ru/">Калужский техникум электронных приборов</a> 2019</p>
+         </div>
+    </footer>
+</div>
+</body>
+</html>

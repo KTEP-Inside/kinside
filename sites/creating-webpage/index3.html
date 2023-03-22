@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Разработка веб-страницы</title>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+</head>
+<body>
+<div id="container">
+
+    <header>
+	<div class="width">
+    		<center><h1><a>Разработка веб-страницы</a></h1></center>
+       	</div>
+    </header>
+
+    <nav>
+	<div class="width">
+    		<ul>
+        		<li class="selected"><a href="index.html">Этапы</a></li>
+        		<li><a href="maket.html">Создание макета</a></li>
+          	  	<li><a href="gimp.html">Создание дизайна в Gimp</a></li>        	
+          	  	<li><a href="photoshop.html">Разработка макета в Photoshop</a></li>
+         	   	<li><a href="verstka.html">Верстка</a></li>
+        	</ul>
+	</div>
+    </nav>
+
+    <div id="body" class="width">
+		<section id="content" class="two-column with-right-sidebar">
+	    <article>
+			<h2>Модульная сетка</h2><br/>
+            <p>Перед составлением схемы проекта так же необходимо уяснить понятие модульной сетки. Модульная сетка подразумевает под собой разделение страницы на отдельные колонки по вертикали и выстраивание контента, при разработке дизайн макета, именно по этой сетке. </p>
+            <p>Наиболее популярной системой является модульная сетка 960 Grid System <a href="http://960.gs">(http://960.gs)</a>, которая максимально делит страницу на 12, 16 и 24 колонки. Максимум в ширине сетка имеет 960 пикселей. Данное решение основано на том, что большинство современных мониторов, на момент создания сетки, имели разрешение не меньше 1024 на 768 пикселей. Создание макета на основе данной сетки, в дальнейшем, поможет ускорить процесс разработки (вёрстки).</p>
+            <center><img src="img/37.png"></center>
+            <center><img src="img/77.jpg"></center>
+            <p>Так же стоит отметить, что при разработке «резинового» макета страницы существует понятие максимальной ширины. Данное утверждение основывается на удобстве восприятия информации. Если предположить, что наш сайт не имеет максимального значения по ширине, то на больших мониторах информация будет сильно растягиваться и её неудобно будет читать. Чаще всего ограничиваются шириной в 1280 пикселей.</p>
+            <p>Модульная сетка 960GS отвечает концепции «фиксированного» дизайна, для «резинового» дизайна можно обратить внимание на адаптацию этой же сетки на сайте <a href="http://www.designinfluences.com/fluid960gs/">http://www.designinfluences.com/fluid960gs/</a> или воспользоваться сеткой, которую предлагает фрэймворк Bootstrap.</p>
+            <p>Благодаря модульной сетке блоки контента и элементы будут располагаться на определённом расстоянии друг от друга, будут иметь удобоваримую ширину, что в дальнейшем визуально будет приятно пользователю и не будет вызывать у него какие-либо неудобства в восприятии сайта.</p>
+            <p>Модульная сетка, по сути, – это некая визуальная абстракция, визуальное деление страницы на равные по ширине столбцы с равными отступами между ними. Визуализировать данную модель можно посредствам направляющих или отдельного слоя, на котором будут изображены эти столбцы. Именно такое решение вы найдёте в шаблонах сетки 960gs.</p>
+            
+		<br/><center><a href="index2.html" class="button">Назад</a>
+		<a href="index4.html" class="button button-reversed">Далее</a></center>
+		</article>
+        </section>
+        <aside class="sidebar big-sidebar right-sidebar">
+            <ul>	
+               <li>
+                    <h4>Разделы</h4>
+                    <ul class="blocklist">
+                        <li><a href="index.html">Проработка макета</a></li>
+                        <li><a href="index2.html">Виды макетов</a></li>
+                        <li><a class="selected" href="index3.html">Модульная сетка</a></li>
+                        <li><a href="index4.html">Макеты страниц</a></li>
+                        <li><a href="index5.html">Дизайн</a></li>
+                        <li><a href="index6.html">Элементы</a></li>
+                        <li><a href="index7.html">Схема просмотра</a></li>
+                        <li><a href="index8.html">Фреймворки</a></li>
+                        <li><a href="index9.html">Тренды</a></li>
+                        <li><a href="index10.html">Скевоморфизм</a></li>
+                        <li><a href="index11.html">Плоский дизайн</a></li>
+                        <li><a href="index12.html">Редакторы кода</a></li>
+                        <li><a href="index13.html">Структура проекта</a></li>
+                        <li><a href="index14.html">Написание HTML</a></li>
+                        <li><a href="index15.html">Создание CSS</a></li>
+                        <li><a href="index16.html">Написание JS</a></li>
+                    </ul>
+                </li>
+            </ul>
+		
+        </aside>
+    	<div class="clear"></div>
+    </div>
+    <footer>
+        <div class="footer-bottom">
+            <p><a href="http://ktep.kaluga.ru/">Калужский техникум электронных приборов</a> 2019</p>
+         </div>
+    </footer>
+</div>
+</body>
+</html>

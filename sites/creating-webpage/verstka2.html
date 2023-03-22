@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Разработка веб-страницы</title>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+</head>
+<body>
+<div id="container">
+
+    <header>
+	<div class="width">
+    		<center><h1><a>Разработка веб-страницы</a></h1></center>
+       	</div>
+    </header>
+
+    <nav>
+	<div class="width">
+    		<ul>
+        		<li><a href="index.html">Этапы</a></li>
+        		<li><a href="maket.html">Создание макета</a></li>
+          	  	<li><a href="gimp.html">Создание дизайна в Gimp</a></li>        	
+          	  	<li><a href="photoshop.html">Разработка макета в Photoshop</a></li>
+         	   	<li class="selected"><a href="verstka.html">Верстка</a></li>
+        	</ul>
+	</div>
+    </nav>
+
+    <div id="body" class="width">
+		<section id="content" class="two-column with-right-sidebar">
+	    <article>
+			<h2>Оформление горизонтального меню</h2><br/>
+			<p>Начало есть, и теперь можно приступать к вёрстке уже непосредственно основных блоков.</p>
+			<p>Начать лучше, конечно, с шапки. Которая, в свою очередь, состоит из блоков горизонтального меню и логотипа.</p>
+			<p>Сначала требуется задать общее оформление обоих элементов шапки: выравнивание текста по левому краю, белый фон и высоту 306px:</p>
+			<pre>
+#header {
+	background: #ffffff;
+	height: 306px;
+	text-align: left;		
+}			</pre>
+			<p>Получено пространство шапки: белый прямоугольник, на котором будут располагаться её элементы.</p>
+            <center><img src="img/61.jpg"></center>
+			<p>Будет логично заняться горизонтальным меню, но прежде, чем вставлять его в HTML, нужно подготовить правила CSS, иначе смотреться в браузере это будет плохо. Первые коррективы: задать левую границу в 2 пикселя толщиной, ширину и высоту меню, а также повторяющийся по оси X фоновый рисунок:</p>
+			<pre>
+#menu
+{
+border-left: 2px solid #ffffff;
+width: 779px;
+height: 80px;
+background: url(images/header_top.gif) repeat-x;
+}			</pre>
+			<p>Страница в обозревателе тут же преобразится и будет выглядеть так.</p>
+            <center><img src="img/62.jpg"></center>
+			<p>Теперь можно добавить и само меню в файл index.html:</p>
+			<pre>
+&lt;table id="menu">
+		&lt;tr>
+			&lt;td>&lt;a href="#"  title="">Главная&lt;/a>&lt;/td>
+			&lt;td>&lt;a href="#"  title="">Галерея&lt;/a>&lt;/td>
+			&lt;td>&lt;a href="#"  title="">Договор&lt;/a>&lt;/td>
+			&lt;td>&lt;a href="#"  title="">Прайс&lt;/a>&lt;/td>
+			&lt;td>&lt;a href="#"  title="">Образцы&lt;/a>&lt;/td>
+			&lt;td>&lt;a href="#"  title="">Контакты&lt;/a>&lt;/td>
+		&lt;/tr>
+&lt;/table>			</pre>
+			<p>Обновив страницу можно увидеть, что оно действительно появилось.</p>
+            <center><img src="img/63.jpg"></center>
+			<p>Вид ссылок оставляет желать лучшего. Нужно установить для них свои правила (выравнивание, ширину, цвет, жирность и т. д.), а ссылкам при наведении задать смену цвета и вернуть убранное по всему шаблону подчёркивание:</p>
+			<pre>
+#menu a {
+	float: left;
+	width: 99px;
+	height: 46px;
+display: block;
+	text-align: center;
+	text-decoration: none;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 14px;
+	padding-top: 35px;
+}
+
+#menu a:hover {
+	color: #D72020;
+	text-decoration: underline;
+}			
+			</pre>
+			<p>Теперь форматирование меню можно сопоставить с PSD-шаблоном.</p>
+            <center><img src="img/64.jpg"></center>
+			<p>Как меняется оформление пункта, если подвести к нему указатель (за это отвечают правила #menu a:hover).</p>
+            <center><img src="img/65.jpg"></center>
+			<br/><h4>Настройка логотипа</h4>
+			<p>Логотип уже есть в папке, остаётся добавить его на страницу и отформатировать правилами. И то, и другое можно сделать средствами CSS.</p>
+			<pre>
+#logo {
+background: #ffffff url(images/big_pic.jpg) no-repeat;
+width: 738px;
+height: 146px;
+text-align: left;
+padding-top: 80px;
+padding-left: 40px;
+border-left: 4px solid #ffffff;
+}			</pre>
+			<p>Логотип вставлен ровно по размеру.</p>
+            <center><img src="img/66.jpg"></center>
+			<p>Единственное, чего ему не хватает, так это текста. Нужно вставить недостающее в блок logo файла index.html, чтобы получилось:</p>
+			<pre>
+&lt;div id="logo">
+		&lt;h1>&lt;a href="#">Имя сайта&lt;/a>&lt;/h1>
+		&lt;h2>&lt;a href="№" id="metamorph">Слоган сайта&lt;/a>&lt;/h2>
+&lt;/div>			</pre>
+			<p>Текст появился, но его тоже нужно оформлять.</p>
+            <center><img src="img/67.jpg"></center>
+			<p>Исходя из того, что логотип почти всегда бывает ссылкой, требуется задать оформление соответствующим классам.</p>
+			<pre>
+#logo a {
+	text-decoration: none;
+	text-transform: lowercase;
+	font-style: italic;
+	font-size: 36px;
+	color: #FFFFFF;
+}
+#logo h2 a
+{
+font-size: 24px;
+}			</pre>
+			<p>Внешний вид текста изменился, и в целом шапка теперь выглядит даже лучше, чем на PSD-макете.</p>
+            <center><img src="img/68.jpg"></center>
+            
+		<br/><center><a href="verstka.html" class="button">Назад</a>
+		<a href="verstka3.html" class="button button-reversed">Далее</a></center>
+		</article>
+        </section>
+        <aside class="sidebar big-sidebar right-sidebar">
+            <ul>	
+               <li>
+                    <h4>Разделы</h4>
+                    <ul class="blocklist">
+                        <li><a href="verstka.html">Подготовительные действия</a></li>
+                        <li><a class="selected" href="verstka2.html">Меню и логотип</a></li>
+                        <li><a href="verstka3.html">Рабочая область</a></li>
+                        <li><a href="verstka4.html">Левая панель</a></li>
+                        <li><a href="verstka5.html">Footer (подвал)</a></li>
+                    </ul>
+                </li>
+            </ul>
+		
+        </aside>
+    	<div class="clear"></div>
+    </div>
+    <footer>
+        <div class="footer-bottom">
+            <p><a href="http://ktep.kaluga.ru/">Калужский техникум электронных приборов</a> 2019</p>
+         </div>
+    </footer>
+</div>
+</body>
+</html>
