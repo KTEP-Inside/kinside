@@ -1,7 +1,7 @@
 ---
 title: "Набор статей по продвижению сайтов"
 description: "Набор статей по способам продвижения сайтов в поискавиках, SEO-оптимизациях, веб аналитике и стратегиях продвижения."
-url: "sites/internet-marketing"
+url: "https:/main.ktep-inside.local/internet-marketing"
 main_preview_url: "/images/no-image.webp"
 secondary_preview_url: "/images/no-image.jpg"
 authors:

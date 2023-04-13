@@ -1,7 +1,7 @@
 ---
 title: "Какую бы выбрать подписку?"
 description: "Красивый сайт с информацией о подписках на стриминговые сервисы кина, музыки, игр и др."
-url: "sites/subscriptions"
+url: "https:/main.ktep-inside.local/subscriptions"
 main_preview_url: "/images/no-image.webp"
 secondary_preview_url: "/images/no-image.jpg"
 authors:

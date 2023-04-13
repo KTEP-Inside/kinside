@@ -1,9 +1,9 @@
 ---
 title: "Moodle"
 description: "Сайт с курсами и лекциями техникума"
-url: "https://moodle.ktep-inside.local"
-main_preview_url: "/sites/moodle/preview.webp"
-secondary_preview_url: "/sites/moodle/preview.jpg"
+url: "https:/moodle.ktep-inside.local"
+main_preview_url: "/sites/preview.webp"
+secondary_preview_url: "/sites/preview.jpg"
 authors:
   - "Кирилл"
 stack:

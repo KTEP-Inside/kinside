@@ -1,7 +1,7 @@
 ---
 title: "Название, которое будет отображаться в карточке"
 description: "Описание сайта, что и зачем делает. Не более 250 символов"
-url: "sites/template-name"
+url: "/sites/template-name"
 main_preview_url: "/images/no-image.webp"
 secondary_preview_url: "/images/no-image.jpg"
 authors:

@@ -3,9 +3,9 @@ title: 'Методическое пособие по оформлению раб
 description: 'На этом сайте вы можете узнать требования по оформлению
   дипломных работ, отчетов по преддипломным практикам, курсовых работ,
   а так же общие требования к оформлению отчетов.'
-url: 'sites/dp'
-main_preview_url: '/sites/dp/preview.webp'
-secondary_preview_url: '/sites/dp/preview.jpg'
+url: 'https:/main.ktep-inside.local/dp'
+main_preview_url: '/dp/preview.webp'
+secondary_preview_url: '/dp/preview.jpg'
 
 authors:
   - 'Неизвестный'

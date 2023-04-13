@@ -1,7 +1,7 @@
 ---
 title: "Подкрадульки"
 description: "все о подкрадульках"
-url: "sites/krak"
+url: "https:/main.ktep-inside.local/krak"
 main_preview_url: "/images/no-image.webp"
 secondary_preview_url: "/images/no-image.jpg"
 authors:
