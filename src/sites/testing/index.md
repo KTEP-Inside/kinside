@@ -3,9 +3,9 @@ title: "Тестирование ПО"
 description: "На этом сайте вы можете узнать что такое тестирование,
   историю его появления, какие виды и методы тестирования есть,
   как их применять и многое другое"
-url: "https:/main.ktep-inside.local/testing"
-main_preview_url: "/testing/preview.webp"
-secondary_preview_url: "/testing/preview.jpg"
+url: "https://main.ktep-inside.local/testing"
+main_preview_url: "/sites/testing/preview.webp"
+secondary_preview_url: "/sites/testing/preview.jpg"
 authors:
   - "Неизвестный"
 stack:
